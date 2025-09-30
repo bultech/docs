@@ -1,0 +1,49 @@
+---
+title: "Proje Ekibi Yönetimi"
+description: "Her projenin kendine özel bir ekibi olabilir. Bu bölüm, belirli bir projede çalışacak kullanıcıları yönetmenizi sağlar."
+---
+
+# Proje Ekibi Yönetimi
+
+Her projenin kendine özel bir ekibi olabilir. Bu bölüm, belirli bir projede çalışacak kullanıcıları yönetmenizi sağlar.
+
+## Proje Ekibi Sayfasına Erişim
+
+<Steps>
+  <Step title="Proje Ayarlarına Gidin">
+    İlgili projenin içindeyken, sol menüden **Proje Ayarları** (<img src="/icons/office-building-cog-outline.svg" alt="office-building-cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayın.
+  </Step>
+  <Step title="Proje Takımı Sekmesini Açın">
+    Açılan sayfanın üst menüsünden **Proje Takımı** (<img src="/icons/account-group-outline.svg" alt="account-group-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) sekmesine tıklayın.
+  </Step>
+</Steps>
+
+Doğrudan URL: `https://app.bultech.co/company/:companyId/project/:projectId/settings/team`
+
+## Projeye Yeni Kullanıcı Ekleme
+
+<Steps>
+  <Step title="Ekleme Formunu Açın">
+    Sağ üstteki mavi renkli "**Ekibinize Ekleyin**" butonuna tıklayın.
+  </Step>
+  <Step title="Kullanıcıları Seçin">
+    Açılan pencerede, şirketinizde bulunan ve bu projede yer almayan kullanıcıların bir listesi görünür. Eklemek istediğiniz kullanıcıları listeden seçin.
+  </Step>
+  <Step title="Onaylayın">
+    "**Tamam**" butonuna tıklayarak kullanıcıları projeye ekleyin. Eklenen kullanıcılar, varsayılan proje rolleriyle ekibe dahil olur.
+  </Step>
+</Steps>
+
+## Önemli Notlar
+
+<AccordionGroup>
+  <Accordion title="Rollerin Geçersiz Kılınması (Override)">
+    Bir kullanıcıya proje seviyesinde atanan roller, o kullanıcının şirket genelindeki rollerini **sadece o proje için** geçersiz kılar. Örneğin, şirket genelinde "Sadece Görüntüleme" yetkisi olan bir kullanıcıya, bu projede "Düzenleme" yetkisi verebilirsiniz.
+  </Accordion>
+  <Accordion title="Kullanıcı Limiti">
+    Projelere eklenebilecek kullanıcı sayısı, şirketinizin abonelik planına göre sınırlı olabilir. Detaylı bilgi için [Limitler ve Kısıtlamalar](/platform-kurallari/limitler-ve-kisitlamalar) sayfasını inceleyebilirsiniz.
+  </Accordion>
+  <Accordion title="Yetkilendirme">
+    Yalnızca [uygun rollere](/platform-kurallari/roller-ve-yetkiler-rbac) sahip kullanıcılar (örn: Proje Yöneticisi, Şirket Sahibi) proje ekibini yönetebilir.
+  </Accordion>
+</AccordionGroup>

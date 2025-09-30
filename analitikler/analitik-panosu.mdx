@@ -1,0 +1,42 @@
+---
+title: "Proje Analitik Panosu"
+description: "Analitik panosu, projenizin finansal sağlığını ve genel ilerlemesini bir bakışta görebilmeniz için tasarlanmış görsel bir kontrol panelidir."
+---
+
+# Proje Analitik Panosu
+
+Analitik panosu, projenizin finansal sağlığını ve genel ilerlemesini bir bakışta görebilmeniz için tasarlanmış görsel bir kontrol panelidir.
+
+## Analitik Panosuna Erişim
+
+- **Doğrudan URL:** `https://app.bultech.co/company/:companyId/project/:projectId/analytics`
+- **Arayüz Yolu:** İlgili projeye giriş yaptığınızda varsayılan olarak bu sayfa açılır veya sol menüden **Analizler** (<img src="/icons/chart-box-outline.svg" alt="chart-box-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayarak erişebilirsiniz.
+
+## Pano Bileşenleri
+
+Analitik panosu, çeşitli bilgi kartları ve grafiklerden oluşur:
+
+<AccordionGroup>
+  <Accordion title="Genel Bilgi Kartları (En Üst Sıra)">
+    Projenizin en temel finansal metriklerini özetler: **Proje Bütçesi**, **Hasılat**, **Onaylanmış Değişiklikler**, **Kâr** ve **Borç**.
+  </Accordion>
+  <Accordion title="Bitiş Sayacı ve Proje Genel Bakışı">
+    - **Bitiş Sayacı:** Projenin planlanan bitiş tarihine ne kadar süre kaldığını gösterir.
+    - **Proje Genel Bakışı:** Projenin adını, numarasını, adresini ve harita üzerindeki konumunu gösterir.
+  </Accordion>
+  <Accordion title="Harcamalar Grafiği (Spending)">
+    Aylık olarak yapılan toplam harcamaları gösteren bir çubuk grafiktir. Ayarlar (<img src="/icons/cog-outline.svg" alt="cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) menüsünden yıl ve çeyrek seçimi yapabilirsiniz.
+  </Accordion>
+  <Accordion title="Taahhüt Durumu (Commitments Status)">
+    Sözleşmelerinizin durumunu (İmzalı, İmzasız, Beklemede) ve bu durumlardaki toplam maliyetleri gösteren bir yarım halka (donut) grafiktir.
+  </Accordion>
+  <Accordion title="Bütçe ve Son Maliyet Karşılaştırması (Budget vs Final Cost)">
+    Belirli maliyet kodları için orijinal bütçeyi ve gerçekleşen son maliyeti yan yana karşılaştıran bir çubuk grafiktir. Ayarlar (<img src="/icons/cog-outline.svg" alt="cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) menüsünden gösterilecek maliyet kodlarını seçebilirsiniz.
+  </Accordion>
+  <Accordion title="Değişiklik Emri Durumu (Change Order Status)">
+    Değişiklik emirlerinizin durumlarına göre dağılımını ve toplam maliyetlerini gösteren bir halka (donut) grafiktir.
+  </Accordion>
+  <Accordion title="Finansal Sağlık (Financial Health)">
+    Projenizin genel finansal performansını ve sağlığını gösteren bir skor ve trendi sunan bir alan grafiğidir.
+  </Accordion>
+</AccordionGroup>

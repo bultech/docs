@@ -1,0 +1,43 @@
+---
+title: "Değişiklik Geçmişi (Change History)"
+description: "Değişiklik Geçmişi, belirli bir modüldeki kalemler üzerinde yapılan tüm değişikliklerin kaydını tutan bir denetim aracıdır."
+---
+
+# Değişiklik Geçmişi (Change History)
+
+Değişiklik Geçmişi, belirli bir modüldeki (özellikle Detaylı Bütçe gibi) kalemler üzerinde yapılan tüm değişikliklerin kaydını tutan bir denetim aracıdır. Kimin, ne zaman, hangi değişikliği yaptığını şeffaf bir şekilde izlemenizi sağlar.
+
+## Değişiklik Geçmişine Erişim
+
+<Steps>
+  <Step title="İlgili Modüle Gidin">
+    Örneğin, **Detaylı Bütçe** sayfasına gidin.
+  </Step>
+  <Step title="Geçmiş İkonuna Tıklayın">
+    Sağ üst köşedeki araç çubuğunda bulunan **Geçmiş** (<img src="/icons/history.svg" alt="history" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayın.
+  </Step>
+</Steps>
+
+## Arayüz ve İşlevler
+
+Açılan pencere, yapılan değişikliklerin bir listesini tablo formatında sunar.
+
+<AccordionGroup>
+  <Accordion title="Değişiklik Listesi Sütunları">
+    - **Kullanıcı:** Değişikliği yapan kullanıcıyı gösterir.
+    - **Eylem (Action):** Yapılan işlemin türünü belirtir (Oluşturma, Güncelleme, Silme).
+    - **Doküman (Document):** Değişikliğin yapıldığı bütçe kaleminin kimliğini gösterir. Tıklayarak ilgili satıra gidebilirsiniz.
+    - **Tarih:** Değişikliğin ne zaman yapıldığını gösterir.
+    - **Detaylar (Details):** **Göz** (<img src="/icons/eye-outline.svg" alt="eye-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayarak değişikliğin ayrıntılarını görebilirsiniz.
+  </Accordion>
+  <Accordion title="Değişiklik Detayları Penceresi">
+    Bu pencere, bir değişikliğin "önceki" ve "sonraki" hallerini yan yana karşılaştırmalı olarak sunar:
+    - **Alan (Field):** Hangi alanda değişiklik yapıldığını belirtir (örn: "Orijinal Bütçe").
+    - **Eski Değer (Old Value):** Değişiklikten önceki değeri gösterir.
+    - **Yeni Değer (New Value):** Değişiklikten sonraki yeni değeri gösterir.
+  </Accordion>
+</AccordionGroup>
+
+<Info>
+Bu araç, bütçe üzerindeki tüm hareketleri izlemek, olası hataları tespit etmek ve ekip üyeleri arasındaki koordinasyonu sağlamak için kritik bir öneme sahiptir.
+</Info>

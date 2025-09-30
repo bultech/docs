@@ -1,0 +1,41 @@
+---
+title: "Veri Tabloları ile Etkileşim"
+description: "Platformun birçok modülü, verileri yönetmek için güçlü ve interaktif tablolar kullanır. Bu bölümde, bu tablolarla nasıl etkileşimde bulunacağınıza dair temel bilgiler yer almaktadır."
+---
+
+# Veri Tabloları ile Etkileşim
+
+Platformun birçok modülü, verileri yönetmek için güçlü ve interaktif tablolar kullanır. Bu bölümde, bu tablolarla nasıl etkileşimde bulunacağınıza dair temel bilgiler yer almaktadır.
+
+<AccordionGroup>
+  <Accordion title="Düzenleme Modu">
+    Çoğu maliyet ve ayar tablosu, yanlışlıkla veri değiştirilmesini önlemek için varsayılan olarak "kilitli" veya "salt okunur" moddadır.
+
+    - **Aktif Etme:** Veri girişi veya düzenleme yapmak için, genellikle tablonun sağ üst köşesinde bulunan **kilit** (<img src="/icons/lock-outline.svg" alt="lock-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayarak **Düzenleme Modu**'nu (<img src="/icons/lock-open-variant-outline.svg" alt="lock-open-variant-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) aktif hale getirmeniz gerekir.
+    - **Veri Girişi:** Düzenleme modu aktifken, tablodaki hücrelere tıklayarak doğrudan veri girebilir veya mevcut verileri değiştirebilirsiniz.
+    - **Yeni Satır Ekleme:** Tablonun en altındaki boş satırı doldurmaya başladığınızda, sistem otomatik olarak altına yeni bir boş satır ekler.
+    - **Kaydetme:** Girdiğiniz veriler genellikle otomatik olarak kaydedilir.
+  </Accordion>
+  <Accordion title="Satır Eylemleri ve Sağ Tık Menüsü (Context Menu)">
+    Birçok tabloda, belirli bir satır üzerinde işlem yapmak için sağ tıklama menüsünü kullanabilirsiniz.
+
+    **Yaygın Sağ Tık Eylemleri:**
+    - **Satırı Sil (Delete Row):** Seçili satırı kalıcı olarak siler (genellikle bir onay istenir).
+    - **Dışa Aktar (Export):** Seçili satırın verilerini PDF veya başka bir formatta dışa aktarır.
+    - **Detayları Görüntüle (View Details):** Satırla ilgili daha fazla detayın bulunduğu bir pencere açar.
+  </Accordion>
+  <Accordion title="Sütunları Yönetme ve Görünümler">
+    Özellikle Detaylı Bütçe gibi karmaşık tablolarda, hangi sütunları göreceğinizi özelleştirebilirsiniz.
+
+    - **Tablo Görünümü Yönetimi (<img src="/icons/table-eye.svg" alt="table-eye" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Bu ikona tıkladığınızda, mevcut tüm sütunların bir listesi açılır. Görmek istediğiniz sütunları seçerek tabloyu anında özelleştirebilir ve bu görünümü daha sonra tekrar kullanmak üzere kaydedebilirsiniz.
+  </Accordion>
+  <Accordion title="Sütun Genişliğini Ayarlama">
+    Bir sütunun başlığına gidin ve başlığın sağ kenarına farenizi getirin. İmleç yeniden boyutlandırma ikonuna dönüştüğünde, tıklayıp sürükleyerek sütunun genişliğini ayarlayabilirsiniz.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  **Yetkilendirme:**
+  - **Düzenleme Modu:** Bir kullanıcının "Düzenleme Modu"nu aktif hale getirebilmesi, o modül için "Düzenleme" veya daha üst bir [yetkiye](/platform-kurallari/roller-ve-yetkiler-rbac) sahip olmasını gerektirir.
+  - **Satır Eylemleri:** Sağ tık menüsünde görünen eylemler (örn: Satırı Sil), kullanıcının o işlem için gerekli yetkiye sahip olup olmamasına göre değişir.
+</Note>

@@ -1,0 +1,97 @@
+# Bul Tech Kullanıcı Kılavuzu
+
+Bul Tech platformu için kapsamlı kullanıcı kılavuzu ve dokümantasyonu
+
+## Başlarken
+- [Giriş](giris/index): Bul Tech platformuna giriş ve genel bakış
+
+## Platform Kuralları
+- [Limitler ve Kısıtlamalar](platform-kurallari/limitler-ve-kisitlamalar): Platform kullanım limitleri ve kısıtlamalar
+- [Roller ve Yetkiler (RBAC)](platform-kurallari/roller-ve-yetkiler-rbac): Rol tabanlı erişim kontrolü ve yetkilendirme sistemi
+
+## Giriş İşlemleri
+- [Giriş Yapma](giris-islemleri/giris-yapma): Platforma giriş yapma adımları
+- [Kayıt Olma](giris-islemleri/kayit-olma): Yeni hesap oluşturma ve kayıt süreci
+- [Şifre Sıfırlama](giris-islemleri/sifre-sifirlama): Şifre sıfırlama ve kurtarma işlemleri
+
+## Hesap Yönetimi
+- [Profil Düzenleme](hesap-yonetimi/profil-duzenleme): Kullanıcı profili ve bilgilerini düzenleme
+- [Şifre Değiştirme](hesap-yonetimi/sifre-degistirme): Hesap şifresini değiştirme
+- [Oturum Yönetimi](hesap-yonetimi/oturum-yonetimi): Aktif oturumları yönetme ve güvenlik
+- [Kullanıcı Kartı](hesap-yonetimi/kullanici-karti): Kullanıcı kartı özellikleri ve kullanımı
+
+## Şirket İşlemleri
+- [Şirket Oluşturma](sirket-islemleri/sirket-olusturma): Yeni şirket kaydı oluşturma
+- [Şirket Ayarları](sirket-islemleri/sirket-ayarlari): Şirket bilgileri ve ayarlarını yönetme
+- [Onay Süreci](sirket-islemleri/onay-sureci): Şirket onay süreçleri ve durumları
+- [Şirket Genel Bakış](sirket-islemleri/sirket-genel-bakis): Şirket dashboard ve özet bilgiler
+- [Şirket Panosu Widget'ları](sirket-islemleri/sirket-panosu-widgetlari): Dashboard widget'ları ve özelleştirme
+
+## Proje İşlemleri
+- [Proje Oluşturma](proje-islemleri/proje-olusturma): Yeni proje başlatma ve kurulum
+- [Proje Listesi](proje-islemleri/proje-listesi): Mevcut projeleri görüntüleme ve yönetme
+- [Proje Ayarları](proje-islemleri/proje-ayarlari): Proje konfigürasyonu ve ayarları
+
+## Ekip Yönetimi
+- [Şirket Ekibi](ekip-yonetimi/sirket-ekibi): Şirket seviyesinde ekip yönetimi ve üye ekleme
+- [Proje Ekibi](ekip-yonetimi/proje-ekibi): Proje bazında ekip oluşturma ve yönetme
+
+## Navigasyon
+- [Sol Menü ve Geçişler](navigasyon/sol-menu-ve-gecisler): Ana navigasyon menüsü kullanımı
+- [Sağ Menü ve Bağlamsal Araçlar](navigasyon/sag-menu-ve-baglamsal-araclar): Bağlam duyarlı araçlar ve seçenekler
+
+## Genel Özellikler
+- [Yorumlar](genel-ozellikler/yorumlar): Yorum sistemi ve işbirliği özellikleri
+- [Spotlight Arama](genel-ozellikler/spotlight-arama): Hızlı arama ve navigasyon aracı
+- [DinoBOT AI](genel-ozellikler/dinobot-ai): Yapay zeka destekli asistan özellikleri
+- [Magic Bar](genel-ozellikler/magic-bar): Komut ve hızlı erişim çubuğu
+- [Destek Merkezi](genel-ozellikler/destek-merkezi): Yardım ve destek kaynakları
+- [Veri Tabloları](genel-ozellikler/veri-tablolari): Tablo görünümleri ve veri yönetimi
+- [Son Görüntülenenler](genel-ozellikler/son-goruntulenenler): Erişim geçmişi ve hızlı erişim
+
+## Genel Ayarlar
+- [Ayarlar Paneli](genel-ayarlar/ayarlar-paneli): Platform ayarları ve tercihleri
+
+## Maliyet Yönetimi
+- [Detaylı Bütçe](maliyet-yonetimi/detayli-butce): Proje bütçesi ve maliyet planlama
+- [Değişiklik Emirleri](maliyet-yonetimi/degisiklik-emirleri): Bütçe değişiklikleri ve revize işlemleri
+- [Harcamalar](maliyet-yonetimi/harcamalar): Harcama takibi ve kayıt yönetimi
+- [Öngörülen Maliyet Raporu](maliyet-yonetimi/ongorulen-maliyet-raporu): Maliyet tahminleri ve raporlama
+- [Öngörülen Maliyet Ayarları](maliyet-yonetimi/ongorulen-maliyet-ayarlari): Maliyet tahmin parametreleri
+- [Karşılaştırma](maliyet-yonetimi/karsilastirma): Bütçe ve gerçekleşen karşılaştırması
+- [Değişiklik Geçmişi](maliyet-yonetimi/degisiklik-gecmisi): Maliyet değişiklik takibi
+
+## Taahhütler
+- [Sözleşme Günlüğü](taahhutler/sozlesme-gunlugu): Sözleşme kayıtları ve takibi
+- [Sözleşme Oluşturma/Düzenleme](taahhutler/sozlesme-olusturma-duzenleme): Yeni sözleşme oluşturma ve düzenleme
+
+## İş Yönetimi
+- [Görünümler ve Temel İşlemler](is-yonetimi/gorunumler-ve-temel-islemler): İş listesi görünümleri ve temel operasyonlar
+- [Görev Oluşturma/Düzenleme](is-yonetimi/gorev-olusturma-duzenleme): Görev yönetimi ve detaylar
+- [Kanban Panosu](is-yonetimi/kanban-panosu): Kanban tarzı görev yönetimi
+- [Zaman Çizelgesi](is-yonetimi/zaman-cizelgesi): Gantt şeması ve zaman planlama
+
+## Günlük Raporlar
+- [Rapor Görünümü](gunluk-raporlar/rapor-gorunumu): Günlük rapor listesi ve genel bakış
+- [Rapor Detayları](gunluk-raporlar/rapor-detaylari): Günlük rapor oluşturma ve içerik yönetimi
+
+## Toplantı Tutanakları
+- [Tutanak Listesi](toplanti-tutanaklari/tutanak-listesi): Toplantı tutanakları görünümü
+- [Tutanak Oluşturma/Düzenleme](toplanti-tutanaklari/tutanak-olusturma-duzenleme): Toplantı tutanağı hazırlama
+
+## Proje Ayarları
+- [İş Kırılım Yapısı](proje-ayarlari/is-kirilim-yapisi): WBS (Work Breakdown Structure) yönetimi
+- [Alt Yükleniciler ve Kişiler](proje-ayarlari/alt-yukleniciler-ve-kisiler): Taşeron ve paydaş yönetimi
+- [Modül Kurulumu](proje-ayarlari/modul-kurulumu): Proje modüllerini etkinleştirme
+
+## Yapay Zeka
+- [AI Sohbet Sayfası](yapay-zeka/ai-sohbet-sayfasi): Yapay zeka asistan ve sohbet özellikleri
+
+## Analitikler
+- [Analitik Panosu](analitikler/analitik-panosu): Veri analizi ve raporlama dashboard'u
+
+## Bildirimler
+- [Bildirim Merkezi](bildirimler/bildirim-merkezi): Bildirim yönetimi ve ayarları
+
+## Faturalandırma
+- [Bakiye ve Ödemeler](faturalandirma/bakiye-ve-odemeler): Hesap bakiyesi ve ödeme işlemleri

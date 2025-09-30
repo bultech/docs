@@ -1,0 +1,79 @@
+---
+title: "Detaylı Bütçe Yönetimi"
+description: "Detaylı Bütçe, projenizin tüm maliyet kalemlerini ayrıntılı olarak takip etmenizi, bütçelemenizi ve raporlamanızı sağlayan kapsamlı bir araçtır."
+---
+
+# Detaylı Bütçe Yönetimi
+
+Detaylı Bütçe, projenizin tüm maliyet kalemlerini ayrıntılı olarak takip etmenizi, bütçelemenizi ve raporlamanızı sağlayan kapsamlı bir araçtır.
+
+## Detaylı Bütçe Sayfasına Erişim
+
+<Steps>
+  <Step title="Maliyet Yönetimine Gidin">
+    İlgili projenin içindeyken, sol menüden **Maliyet Yönetimi** (<img src="/icons/database-search-outline.svg" alt="database-search-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayın.
+  </Step>
+  <Step title="Bütçe'yi Seçin">
+    Açılan alt menüden **Bütçe** (<img src="/icons/wallet-bifold-outline.svg" alt="wallet-bifold-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) seçeneğine tıklayın.
+  </Step>
+</Steps>
+
+Doğrudan URL: `https://app.bultech.co/company/:companyId/project/:projectId/cost-management/detail-budget`
+
+## İlk Kurulum
+
+Bu sayfayı ilk kez ziyaret ettiğinizde, bütçenizi nasıl yönetmek istediğinizi seçmeniz için bir kurulum ekranı ile karşılaşırsınız:
+
+<CardGroup cols={2}>
+  <Card title="Varsayılan Bütçe" icon="file-outline">
+    Proje için tek bir ana bütçe kullanmak isterseniz bu seçeneği seçin.
+  </Card>
+  <Card title="Senaryo Bazlı Bütçe" icon="file-multiple-outline">
+    Farklı durumlar (iyimser, kötümser vb.) için birden fazla bütçe senaryosu oluşturup karşılaştırmak isterseniz bu seçeneği tercih edin.
+  </Card>
+</CardGroup>
+
+<Info>
+Seçiminizi yaptıktan sonra ana bütçe tablosu ekranına yönlendirilirsiniz. Bu ayarı daha sonra sayfanın sağ üst köşesindeki **Ayarlar** (<img src="/icons/cog-outline.svg" alt="cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonundan değiştirebilirsiniz.
+</Info>
+
+## Detaylı Bütçe Arayüzü
+
+<AccordionGroup>
+  <Accordion title="Global Aksiyonlar (Sağ Üst Köşe)">
+    - **Düzenleme Modu (<img src="/icons/lock-outline.svg" alt="lock-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Tablo üzerinde veri girişi yapmak için kilidi açar.
+    - **Filtrele (<img src="/icons/filter-outline.svg" alt="filter-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Bütçe kalemlerini filtreler.
+    - **Tablo Görünümü (<img src="/icons/table-eye.svg" alt="table-eye" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Gösterilecek sütunları yönetmenizi sağlar.
+    - **Excel'e Aktar (<img src="/icons/file-excel-box.svg" alt="file-excel-box" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Bütçe tablosunu indirir.
+    - **Değişiklik Geçmişi (<img src="/icons/history.svg" alt="history" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Bütçe üzerindeki tüm değişikliklerin kaydını gösterir.
+    - **Maliyet İçgörüsü (<img src="/icons/local-offer.svg" alt="local-offer" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** AI destekli maliyet analizi sunar.
+    - **Görünüm Değiştir (<img src="/icons/view-list.svg" alt="view-list" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Tablo görünümünü değiştirir.
+    - **Tam Ekran (<img src="/icons/fullscreen.svg" alt="fullscreen" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Tabloyu tam ekrana alır.
+  </Accordion>
+  <Accordion title="Bütçe Tablosu Sütunları">
+    - **Tam Kod:** Maliyet kalemini benzersiz olarak tanımlar.
+    - **Şirket Adı:** Sorumlu alt yükleniciyi belirtir.
+    - **Orijinal Bütçe:** Başlangıçta ayrılan bütçedir.
+    - **Revize Edilmiş Bütçe:** Değişiklikler sonrası güncel bütçedir.
+    - **Öngörülen Maliyet (Anticipated Cost):** Gerçekleşen, taahhüt edilen ve öngörülen ek maliyetlerin toplamıdır.
+    - **Son Maliyet:** Tüm maliyetler dahil nihai maliyettir.
+    - **Varyans Sütunları:** Bütçelenen ve gerçekleşen maliyetler arasındaki farkları gösterir.
+  </Accordion>
+  <Accordion title="Veri Girişi ve Düzenleme">
+    1.  Sağ üstteki **Düzenleme Modu** butonuna tıklayarak tabloyu düzenlemeye açın.
+    2.  İlgili hücreye tıklayarak doğrudan veri girişi yapabilirsiniz.
+    3.  Yeni bir satır eklemek için tablonun en altındaki boş satırı doldurmanız yeterlidir.
+    4.  Bir satırı silmek için, fare ile satırın üzerine gelip sağ tıklayın ve "Satırı Sil" seçeneğini seçin.
+  </Accordion>
+</AccordionGroup>
+
+## Önemli Notlar
+
+<AccordionGroup>
+    <Accordion title="Yetkilendirme">
+        Bütçe kalemlerini oluşturma, düzenleme ve silme işlemleri, kullanıcının [rollerine ve yetkilerine](/platform-kurallari/roller-ve-yetkiler-rbac) bağlıdır.
+    </Accordion>
+    <Accordion title="Otomatik Hesaplamalar">
+        Tablodaki birçok sütun (örn: Revize Edilmiş Bütçe, Son Maliyet, Varyanslar) diğer sütunlardaki verilere göre otomatik olarak hesaplanır ve doğrudan düzenlenemez.
+    </Accordion>
+</AccordionGroup>

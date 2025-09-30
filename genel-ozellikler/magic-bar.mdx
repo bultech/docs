@@ -1,0 +1,45 @@
+---
+title: "Magic Bar (Bağlamsal Eylem Çubuğu)"
+description: "Magic Bar, belirli bir bağlamda ekranın alt kısmında beliren ve o an yapabileceğiniz ilgili eylemleri sunan dinamik bir araç çubuğudur."
+---
+
+# Magic Bar: Bağlamsal Eylem Çubuğu
+
+Magic Bar, belirli bir bağlamda (örneğin, bir tabloda birden çok öğe seçtiğinizde) ekranın alt kısmında beliren ve o an yapabileceğiniz ilgili eylemleri sunan dinamik bir araç çubuğudur.
+
+## Magic Bar'ı Aktif Etme
+
+Magic Bar, toplu işlem yapabileceğiniz durumlarda otomatik olarak ortaya çıkar. En yaygın kullanım senaryosu, bir tabloda birden fazla satır seçmektir.
+
+<Steps>
+  <Step title="Liste Görünümüne Gidin">
+    Örneğin, **İş Yönetimi** sayfasındaki **Liste Görünümü**'ne gidin.
+  </Step>
+  <Step title="Birden Fazla Öğe Seçin">
+    Birden fazla görevin yanındaki onay kutularını (`checkbox`) işaretleyin.
+  </Step>
+  <Step title="Magic Bar'ı Görüntüleyin">
+    Seçim yaptığınız anda, ekranın alt-orta kısmında Magic Bar belirecektir.
+  </Step>
+</Steps>
+
+## Arayüz ve İşlevler
+
+<AccordionGroup>
+  <Accordion title="Seçim Sayacı">
+    **Metin:** "X öğe seçili" gibi bir metinle kaç adet öğe seçtiğinizi gösterir.
+  </Accordion>
+  <Accordion title="Eylem Butonları">
+    Seçili öğeler üzerinde gerçekleştirebileceğiniz eylemleri temsil eden ikon butonlarıdır.
+    - **Toplu Silme (<img src="/icons/trash-can-outline.svg" alt="trash-can-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Seçili tüm öğeleri silmek için bir onay penceresi açar.
+    - **Toplu Düzenleme (<img src="/icons/pencil-outline.svg" alt="pencil-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Seçili tüm öğelerin belirli bir alanını (örn: atanan kişi, durum) aynı anda değiştirmek için bir form açar.
+    - **Toplu Dışa Aktarma (<img src="/icons/export.svg" alt="export" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Seçili öğeleri bir dosyaya (örn: Excel, PDF) aktarır.
+  </Accordion>
+  <Accordion title="Kapatma / Seçimi Temizleme Butonu">
+    Magic Bar'ı gizlemek ve yaptığınız tüm seçimleri temizlemek için bu ikona (<img src="/icons/close.svg" alt="close" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) tıklayın.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  **Yetkilendirme:** Magic Bar'da görünen eylem butonları, kullanıcının [rollerine ve yetkilerine](/platform-kurallari/roller-ve-yetkiler-rbac) göre dinamik olarak değişir. Örneğin, bir kullanıcının "Silme" yetkisi yoksa, toplu seçim yapsa bile Magic Bar'da silme (<img src="/icons/trash-can-outline.svg" alt="trash-can-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonu görünmez.
+</Note>

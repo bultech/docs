@@ -1,0 +1,39 @@
+---
+title: "Zaman Çizelgesi (Gantt Şeması) Kullanımı"
+description: "Zaman Çizelgesi görünümü, projelerinizdeki görevlerin ve epiklerin başlangıç ve bitiş tarihlerini, sürelerini ve birbirleriyle olan ilişkilerini görsel bir takvim üzerinde görmenizi sağlar."
+---
+
+# Zaman Çizelgesi (Gantt Şeması) Kullanımı
+
+Zaman Çizelgesi görünümü, projelerinizdeki görevlerin ve epiklerin başlangıç ve bitiş tarihlerini, sürelerini ve birbirleriyle olan ilişkilerini görsel bir takvim üzerinde görmenizi sağlar. Bu, proje planlaması ve takibi için güçlü bir araçtır.
+
+## Arayüz Yapısı
+
+Sayfa iki ana bölümden oluşur:
+- **Görev Listesi (Sol Panel):** Projedeki tüm epikler ve görevler hiyerarşik bir yapıda listelenir.
+- **Zaman Çizelgesi (Sağ Panel):** Görevlerin başlangıç ve bitiş tarihlerine göre konumlandırıldığı yatay çubukları (barları) içeren ana takvim alanıdır.
+
+## Temel İşlemler
+
+<AccordionGroup>
+  <Accordion title="Tarihleri ve Süreleri Ayarlama">
+    - **Sürükleyerek Taşıma:** Bir görev çubuğunu farenizle tutup zaman çizelgesi üzerinde sola veya sağa sürükleyerek başlangıç ve bitiş tarihlerini aynı anda değiştirebilirsiniz.
+    - **Sürükleyerek Uzatma/Kısaltma:** Bir görev çubuğunun sağ veya sol kenarından tutup sürükleyerek görevin süresini ayarlayabilirsiniz.
+  </Accordion>
+  <Accordion title="Görevleri Yeniden Sıralama">
+    Sol paneldeki görev listesinde, bir görevi veya epik'i tutup yukarı veya aşağı sürükleyerek sıralamasını değiştirebilirsiniz.
+  </Accordion>
+  <Accordion title="Bir Görevi Epik Altına Taşıma">
+    Sol panelde listelenen bağımsız bir görevi, bir epik'in üzerine sürükleyip bırakarak o epik'in alt görevi haline getirebilirsiniz.
+  </Accordion>
+  <Accordion title="Zaman Çizelgesi Kontrolleri">
+    - **Yakınlaştır/Uzaklaştır (`+`/`-`):** Zaman çizelgesinin detay seviyesini artırıp azaltmanızı sağlar.
+    - **Bugün:** Zaman çizelgesini mevcut güne odaklar.
+    - **Başa Git:** Zaman çizelgesini projenin başlangıcına odaklar.
+    - **Yıl Aralığı:** Gösterilecek yıl aralığını seçmenizi sağlar.
+  </Accordion>
+</AccordionGroup>
+
+<Info>
+**Not:** Zaman çizelgesi üzerinde yaptığınız tüm değişiklikler (tarih, süre, sıralama vb.) otomatik olarak kaydedilir ve görevin detaylarına yansıtılır.
+</Info>

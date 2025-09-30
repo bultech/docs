@@ -1,0 +1,53 @@
+---
+title: "Toplantı Tutanağı Oluşturma ve Düzenleme"
+description: "Bu sayfa, toplantılarınızın tüm detaylarını yönetmenizi ve yapay zeka destekli not alma özelliklerini kullanmanızı sağlar."
+---
+
+# Toplantı Tutanağı Oluşturma ve Düzenleme
+
+Bu sayfa, toplantılarınızın tüm detaylarını yönetmenizi ve yapay zeka destekli not alma özelliklerini kullanmanızı sağlar.
+
+## Forma Erişim
+
+- **Oluşturma:** [Tutanak listesi](/toplanti-tutanaklari/tutanak-listesi) sayfasındaki "**Toplantı Tutanağı Oluştur**" butonuna tıklayın.
+- **Düzenleme:** Takvim veya tablo görünümünden mevcut bir toplantıya tıklayın.
+
+## Form Alanları ve Yönetim
+
+<AccordionGroup>
+  <Accordion title="Toplantı Bilgileri">
+    Toplantı numarası, adı, konumu, video konferans linki, tarih, saat dilimi ve başlangıç/bitiş saatleri gibi temel bilgileri girersiniz.
+  </Accordion>
+  <Accordion title="Katılımcılar">
+    Proje ekibinizden toplantıya katılacak kişileri seçersiniz.
+  </Accordion>
+  <Accordion title="Gündem ve Notlar">
+    - **Genel Bakış:** Toplantının genel gündemini veya amacını yazabileceğiniz bir metin alanıdır.
+    - **Not:** Toplantı sırasında veya sonrasında manuel olarak alacağınız notlar için kullanılan ana metin editörüdür.
+    - **Ekler:** Toplantıyla ilgili belgeleri (sunum, rapor vb.) yükleyebilirsiniz.
+  </Accordion>
+  <Accordion title="Tutanak Yönetimi">
+    - **Dağıtım Grubu (<img src="/icons/account-group-outline.svg" alt="account-group-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Tutanak tamamlandığında, bu buton ile seçtiğiniz kişilere e-posta olarak gönderebilirsiniz.
+    - **PDF Olarak Dışa Aktar (<img src="/icons/file-pdf-box.svg" alt="file-pdf-box" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Tutanağın PDF çıktısını alabilirsiniz.
+    - **Sil (<img src="/icons/delete-outline.svg" alt="delete-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Tutanağı kalıcı olarak silebilirsiniz.
+  </Accordion>
+</AccordionGroup>
+
+## Yapay Zeka Destekli Tutanak Oluşturma
+
+Bu özellik, ses kayıtlarını metne dönüştürerek ve özetleyerek tutanak oluşturma sürecini otomatikleştirir.
+
+<Steps>
+  <Step title="Toplantı Kaydını Başlat">
+    Sayfanın sağ üst köşesindeki **kayıt** (<img src="/icons/record-circle-outline.svg" alt="record-circle-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayın. Açılan pencereden kayıt yöntemini seçin:
+    - **Google Meet / Zoom vb.:** Toplantı linkini yapıştırın.
+    - **Mikrofon:** Cihazınızın mikrofonunu kullanın.
+    - **Yerel Dosya:** Bir ses/video dosyası yükleyin.
+  </Step>
+  <Step title="İşlemi Bekleyin">
+    Kayıt başlatıldıktan veya dosya yüklendikten sonra, sistemin işlemi tamamlamasını bekleyin. İşlem tamamlandığında, formun alt kısmında yapay zeka tarafından oluşturulmuş yeni bir not bölümü belirir.
+  </Step>
+  <Step title="Asistan ile Notları Düzenleyin">
+    Yapay zeka tarafından oluşturulan not bölümünün sağ üst köşesindeki "**Asistan / Agent**" butonuna tıklayın. Açılan sohbet arayüzünde DinoBot'a "Bu metni özetle", "Alınan kararları listele" gibi komutlar vererek notları düzenleyin ve "**Uygula**" butonu ile değişiklikleri kaydedin.
+  </Step>
+</Steps>

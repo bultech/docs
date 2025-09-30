@@ -1,0 +1,62 @@
+---
+title: "Roller ve Yetkiler (RBAC)"
+description: "Bul Tech platformu, kullanıcıların verilere ve özelliklere erişimini yönetmek için esnek ve güçlü bir Rol Bazlı Erişim Kontrolü (RBAC) sistemi kullanır."
+---
+
+# Roller ve Yetkiler: Rol Bazlı Erişim Kontrolü (RBAC)
+
+Bul Tech platformu, kullanıcıların verilere ve özelliklere erişimini yönetmek için esnek ve güçlü bir Rol Bazlı Erişim Kontrolü (RBAC) sistemi kullanır. Bu sistem, her kullanıcının yalnızca kendi sorumluluk alanı dahilindeki bilgilere erişmesini ve işlemler yapmasını sağlayarak veri güvenliğini ve iş akışı düzenini temin eder.
+
+## RBAC Sisteminin Temel Kavramları
+
+<AccordionGroup>
+  <Accordion title="Rol (Role)">
+    Bir dizi yetkinin bir araya getirilerek oluşturulduğu bir etikettir. Örneğin, "Bütçe Görüntüleme" veya "Proje Yöneticisi" birer roldür.
+  </Accordion>
+  <Accordion title="Yetki (Permission)">
+    Platformdaki en temel eylemdir. Bir yetki, belirli bir veri üzerinde belirli bir işlemi (Görüntüleme, Oluşturma, Düzenleme, Silme) yapma hakkını tanımlar.
+    **Örnek:** "Detaylı Bütçe modülündeki bir satırı **silme**" bir yetkidir.
+  </Accordion>
+  <Accordion title="Kapsam (Scope)">
+    Bir rolün nerede geçerli olduğunu belirtir. Bul Tech'te iki ana kapsam bulunur:
+    - **Şirket Kapsamı:** Yetkiler, kullanıcının dahil olduğu tüm şirket için geçerlidir.
+    - **Proje Kapsamı:** Yetkiler, yalnızca belirli bir proje için geçerlidir.
+  </Accordion>
+</AccordionGroup>
+
+## Ana Kullanıcı Tipleri ve Hiyerarşi
+
+<AccordionGroup>
+  <Accordion title="Şirket Sahibi (Company Owner)">
+    **Yetkileri:** Şirket üzerindeki en yetkili kullanıcıdır. Tüm projelere, modüllere ve ayarlara tam erişim hakkı vardır. Kullanıcıları davet edebilir, rollerini yönetebilir ve faturalandırma bilgilerine erişebilir.
+    **Atama:** Bir şirket oluşturulduğunda, oluşturan kullanıcı otomatik olarak "Şirket Sahibi" olur. Bu rol başka bir kullanıcıya devredilebilir.
+  </Accordion>
+  <Accordion title="Şirket Yöneticisi (Company Admin)">
+    **Yetkileri:** Şirket Sahibine benzer şekilde geniş yetkilere sahiptir, ancak genellikle faturalandırma gibi en kritik işlemleri yapamaz. Şirket genelindeki projeleri ve kullanıcıları yönetebilir.
+  </Accordion>
+  <Accordion title="Proje Yöneticisi (Project Admin)">
+    **Yetkileri:** Atandığı projeler üzerinde tam yetkiye sahiptir. Proje ekibini yönetebilir, tüm modüllerde veri oluşturabilir, düzenleyebilir ve silebilir. Ancak yetkileri yalnızca atandığı projelerle sınırlıdır.
+  </Accordion>
+  <Accordion title="Proje Üyesi (Project Member)">
+    **Yetkileri:** En kısıtlı kullanıcı tipidir. Yetkileri, kendisine atanan rollerle sınırlıdır. Örneğin, bir proje üyesi yalnızca "Bütçe Görüntüleme" ve "Görev Düzenleme" yetkilerine sahip olabilir.
+  </Accordion>
+</AccordionGroup>
+
+## Rol ve Yetki Yönetimi Arayüzleri
+
+Yetkileri iki ana seviyede yönetebilirsiniz:
+
+<CardGroup cols={2}>
+  <Card title="Şirket Seviyesi Rol Yönetimi" href="/ekip-yonetimi/sirket-ekibi">
+    Bu arayüzden bir kullanıcının şirket genelindeki rollerini (örn: Şirket Yöneticisi yapma) ve **tüm projeler için varsayılan** yetkilerini ayarlayabilirsiniz.
+  </Card>
+  <Card title="Proje Seviyesi Rol Yönetimi" href="/ekip-yonetimi/proje-ekibi">
+    Bu arayüz, bir kullanıcının **sadece o projeye özel** yetkilerini ayarlamanızı sağlar. Burada yapılan bir ayar, kullanıcının şirket genelindeki rollerini geçersiz kılar (override eder).
+  </Card>
+</CardGroup>
+
+<Note>
+  **Önemli Notlar:**
+  - **Veri Gizliliği:** RBAC sistemi sayesinde, bir kullanıcının görmeye yetkili olmadığı hiçbir veriye (proje, bütçe kalemi, rapor vb.) arama, analitikler veya yapay zeka asistanı aracılığıyla erişmesi mümkün değildir.
+  - **Esneklik:** Modül bazlı yetkilendirme sayesinde, her bir kullanıcı için çok detaylı ve ihtiyaca özel erişim profilleri oluşturabilirsiniz.
+</Note>

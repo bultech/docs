@@ -1,0 +1,42 @@
+---
+title: "İş Yönetimi: Görev Takibi"
+description: "İş Yönetimi modülü, projenizdeki tüm görevleri, epikleri (büyük iş paketleri) ve alt görevleri oluşturmanıza, atamanıza ve ilerlemelerini takip etmenize olanak tanır."
+---
+
+# İş Yönetimi: Görev Takibi
+
+İş Yönetimi modülü, projenizdeki tüm görevleri, epikleri (büyük iş paketleri) ve alt görevleri oluşturmanıza, atamanıza ve ilerlemelerini takip etmenize olanak tanır.
+
+## Sayfaya Erişim
+
+İlgili projenin içindeyken, sol menüden **İş Yönetimi** (<img src="/icons/calendar-task-outline.svg" alt="calendar-task-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklamanız yeterlidir.
+
+Doğrudan URL: `https://app.bultech.co/company/:companyId/project/:projectId/work-management/list`
+
+## Arayüz Görünümleri
+
+Sayfanın üst kısmında, görevlerinizi farklı şekillerde görselleştirmenizi sağlayan üç ana görünüm butonu bulunur:
+
+<CardGroup cols={3}>
+  <Card title="Liste Görünümü" icon="format-list-bulleted" href="/is-yonetimi/gorunumler-ve-temel-islemler">
+    Tüm görevleri ve epikleri hiyerarşik bir tablo yapısında gösterir.
+  </Card>
+  <Card title="Kanban Panosu" icon="view-kanban-outline" href="/is-yonetimi/kanban-panosu">
+    Görevleri, durumlarına göre sütunlar halinde görselleştirir. Sürükle-bırak ile durum güncellemeyi sağlar.
+  </Card>
+  <Card title="Zaman Çizelgesi" icon="chart-gantt" href="/is-yonetimi/zaman-cizelgesi">
+    Görevleri bir Gantt şeması üzerinde, başlangıç ve bitiş tarihlerine göre görselleştirir.
+  </Card>
+</CardGroup>
+
+## Global Aksiyonlar (Sayfanın Sağ Üst Köşesi)
+
+- **Görev Oluştur:** Yeni bir görev veya epik oluşturma formunu açar.
+- **Filtrele (<img src="/icons/filter-outline.svg" alt="filter-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Görevleri atanan kişi, bitiş tarihi, öncelik gibi kriterlere göre filtreler.
+- **Ara:** Görevler içinde metin bazlı arama yapar.
+
+<Note>
+  **Yetkilendirme ve Görünürlük:**
+  - Yeni görev oluşturma, düzenleme ve silme gibi işlemler, kullanıcının [rollerine ve yetkilerine](/platform-kurallari/roller-ve-yetkiler-rbac) bağlıdır.
+  - Kullanıcılar, varsayılan olarak yalnızca kendilerine atanan veya bildirim alacakları listesinde oldukları görevleri görebilirler.
+</Note>

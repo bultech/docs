@@ -1,69 +1,160 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Bul Tech Kullanıcı Kılavuzu",
+  "description": "Bul Tech platformu için kapsamlı kullanıcı kılavuzu ve dokümantasyonu",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2563EB",
+    "light": "#3B82F6",
+    "dark": "#1D4ED8"
   },
   "favicon": "/favicon.svg",
+  "icons": {
+    "library": "fontawesome"
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Kullanıcı Kılavuzu",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Başlarken",
+            "pages": ["giris/index"]
+          },
+          {
+            "group": "Platform Kuralları",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "platform-kurallari/limitler-ve-kisitlamalar",
+              "platform-kurallari/roller-ve-yetkiler-rbac"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Giriş İşlemleri",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "giris-islemleri/giris-yapma",
+              "giris-islemleri/kayit-olma",
+              "giris-islemleri/sifre-sifirlama"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Hesap Yönetimi",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "hesap-yonetimi/profil-duzenleme",
+              "hesap-yonetimi/sifre-degistirme",
+              "hesap-yonetimi/oturum-yonetimi",
+              "hesap-yonetimi/kullanici-karti"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Şirket İşlemleri",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "sirket-islemleri/sirket-olusturma",
+              "sirket-islemleri/sirket-ayarlari",
+              "sirket-islemleri/onay-sureci",
+              "sirket-islemleri/sirket-genel-bakis",
+              "sirket-islemleri/sirket-panosu-widgetlari"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Proje İşlemleri",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "proje-islemleri/proje-olusturma",
+              "proje-islemleri/proje-listesi",
+              "proje-islemleri/proje-ayarlari"
             ]
+          },
+          {
+            "group": "Ekip Yönetimi",
+            "pages": ["ekip-yonetimi/sirket-ekibi", "ekip-yonetimi/proje-ekibi"]
+          },
+          {
+            "group": "Navigasyon",
+            "pages": [
+              "navigasyon/sol-menu-ve-gecisler",
+              "navigasyon/sag-menu-ve-baglamsal-araclar"
+            ]
+          },
+          {
+            "group": "Genel Özellikler",
+            "pages": [
+              "genel-ozellikler/yorumlar",
+              "genel-ozellikler/spotlight-arama",
+              "genel-ozellikler/dinobot-ai",
+              "genel-ozellikler/magic-bar",
+              "genel-ozellikler/destek-merkezi",
+              "genel-ozellikler/veri-tablolari",
+              "genel-ozellikler/son-goruntulenenler"
+            ]
+          },
+          {
+            "group": "Genel Ayarlar",
+            "pages": ["genel-ayarlar/ayarlar-paneli"]
+          },
+          {
+            "group": "Maliyet Yönetimi",
+            "pages": [
+              "maliyet-yonetimi/detayli-butce",
+              "maliyet-yonetimi/degisiklik-emirleri",
+              "maliyet-yonetimi/harcamalar",
+              "maliyet-yonetimi/ongorulen-maliyet-raporu",
+              "maliyet-yonetimi/ongorulen-maliyet-ayarlari",
+              "maliyet-yonetimi/karsilastirma",
+              "maliyet-yonetimi/degisiklik-gecmisi"
+            ]
+          },
+          {
+            "group": "Taahhütler",
+            "pages": [
+              "taahhutler/sozlesme-gunlugu",
+              "taahhutler/sozlesme-olusturma-duzenleme"
+            ]
+          },
+          {
+            "group": "İş Yönetimi",
+            "pages": [
+              "is-yonetimi/gorunumler-ve-temel-islemler",
+              "is-yonetimi/gorev-olusturma-duzenleme",
+              "is-yonetimi/kanban-panosu",
+              "is-yonetimi/zaman-cizelgesi"
+            ]
+          },
+          {
+            "group": "Günlük Raporlar",
+            "pages": [
+              "gunluk-raporlar/rapor-gorunumu",
+              "gunluk-raporlar/rapor-detaylari"
+            ]
+          },
+          {
+            "group": "Toplantı Tutanakları",
+            "pages": [
+              "toplanti-tutanaklari/tutanak-listesi",
+              "toplanti-tutanaklari/tutanak-olusturma-duzenleme"
+            ]
+          },
+          {
+            "group": "Proje Ayarları",
+            "pages": [
+              "proje-ayarlari/is-kirilim-yapisi",
+              "proje-ayarlari/alt-yukleniciler-ve-kisiler",
+              "proje-ayarlari/modul-kurulumu"
+            ]
+          },
+          {
+            "group": "Yapay Zeka",
+            "pages": ["yapay-zeka/ai-sohbet-sayfasi"]
+          },
+          {
+            "group": "Analitikler",
+            "pages": ["analitikler/analitik-panosu"]
+          },
+          {
+            "group": "Bildirimler",
+            "pages": ["bildirimler/bildirim-merkezi"]
+          },
+          {
+            "group": "Faturalandırma",
+            "pages": ["faturalandirma/bakiye-ve-odemeler"]
           }
         ]
       }
@@ -71,13 +162,13 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Website",
+          "href": "https://bultech.co/",
+          "icon": "globe"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://bultech.co/articles",
           "icon": "newspaper"
         }
       ]
@@ -91,32 +182,30 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:info@bultech.co"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.bultech.co/"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "linkedin": "https://www.linkedin.com/company/bul-tech/"
     }
   }
 }
