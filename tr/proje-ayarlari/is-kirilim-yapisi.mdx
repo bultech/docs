@@ -1,0 +1,49 @@
+---
+title: "İş Kırılım Yapısı (Maliyet Kodu ve Tipi)"
+description: "Bu bölüm, projenizin maliyet yapısını oluşturmak için temel olan Maliyet Kodlarını ve Maliyet Tiplerini yönetmenizi sağlar."
+---
+
+# İş Kırılım Yapısı (Maliyet Kodu ve Tipi)
+
+Bu bölüm, projenizin maliyet yapısını oluşturmak için temel olan Maliyet Kodlarını ve Maliyet Tiplerini yönetmenizi sağlar. Bu yapılar, Detaylı Bütçe ve diğer maliyet modüllerinde kullanılır.
+
+## Sayfaya Erişim
+
+<Steps>
+  <Step title="Proje Ayarlarına Gidin">
+    İlgili projenin içindeyken, sol menüden **Proje Ayarları** (<img src="/icons/office-building-cog-outline.svg" alt="office-building-cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayın.
+  </Step>
+  <Step title="İş Kırılım Yapısı Sekmesini Açın">
+    Üst menüden **İş Kırılım Yapısı** (<img src="/icons/counter.svg" alt="counter" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) sekmesine tıklayın.
+  </Step>
+</Steps>
+
+## Yönetim Alanları
+
+<AccordionGroup>
+  <Accordion title="Maliyet Kodu (Cost Code)">
+    Bu sekme, maliyetlerinizi hiyerarşik bir düzende sınıflandırmanızı sağlar.
+    - **Arayüz:** Sol panelde bölümleri gösteren bir ağaç yapısı ve sağ panelde seçili bölüme ait maliyet kodlarını listeleyen bir tablo bulunur.
+    - **İşlemler (Düzenleme Modu Aktifken):**
+        - **Yeni Kod Ekleme:** Tablonun en altındaki boş satıra tıklayarak yeni bir kod ekleyebilirsiniz.
+        - **Düzenleme:** Tablodaki bir hücreye tıklayarak mevcut kodu veya açıklamayı düzenleyebilirsiniz.
+        - **Silme:** Sağ tıklama menüsünden "Satırı Sil" seçeneği ile kodu silebilirsiniz.
+        - **İçe/Dışa Aktarma:** Sağ üstteki butonları kullanarak maliyet kodlarınızı Excel veya CSV formatında toplu olarak içe veya dışa aktarabilirsiniz.
+  </Accordion>
+  <Accordion title="Maliyet Tipi (Cost Type)">
+    Bu sekme, maliyetlerinizi türlerine göre (örn: İşçilik, Malzeme, Ekipman) sınıflandırmanızı sağlar.
+    - **Arayüz:** Maliyet tiplerini, kodlarını ve açıklamalarını gösteren basit bir tablodan oluşur.
+    - **İşlemler (Düzenleme Modu Aktifken):** Maliyet Kodu sekmesindeki gibi, hücrelere tıklayarak düzenleme yapabilir, sağ tıklayarak silebilir ve toplu olarak içe/dışa aktarabilirsiniz.
+  </Accordion>
+</AccordionGroup>
+
+## Önemli Notlar
+
+<AccordionGroup>
+    <Accordion title="Yetkilendirme">
+        Maliyet Kodlarını ve Maliyet Tiplerini yönetme işlemleri, Proje Yöneticisi gibi [yüksek yetkili rollere](/tr/platform-kurallari/roller-ve-yetkiler-rbac) sahip kullanıcılarla sınırlıdır.
+    </Accordion>
+    <Accordion title="Modüllere Etkisi">
+        Burada oluşturulan yapılar, projenin tüm maliyet yönetimi modüllerinin temelini oluşturur. Örneğin, **Detaylı Bütçe**'de bir maliyet kalemi oluştururken, burada tanımlanan Maliyet Kodu ve Maliyet Tipi'ni seçmeniz gerekir.
+    </Accordion>
+</AccordionGroup>

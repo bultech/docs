@@ -1,0 +1,43 @@
+---
+title: "Change History"
+description: "Change History is an audit tool that keeps a record of all changes made to items in a specific module, allowing you to track who made what change and when."
+---
+
+# Change History
+
+Change History is an audit tool that keeps a record of all changes made to items in a specific module (especially like Detailed Budget). It allows you to transparently track who made what change and when.
+
+## Accessing Change History
+
+<Steps>
+  <Step title="Go to the Relevant Module">
+    For example, go to the **Detailed Budget** page.
+  </Step>
+  <Step title="Click the History Icon">
+    Click the **History** (<img src="/icons/history.svg" alt="history" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the toolbar in the top right corner.
+  </Step>
+</Steps>
+
+## Interface and Functions
+
+The window that opens presents a list of changes in a table format.
+
+<AccordionGroup>
+  <Accordion title="Change List Columns">
+    - **User:** Shows the user who made the change.
+    - **Action:** Indicates the type of action performed (Create, Update, Delete).
+    - **Document:** Shows the ID of the budget item where the change was made. You can click it to go to the relevant row.
+    - **Date:** Shows when the change was made.
+    - **Details:** You can see the details of the change by clicking the **Eye** (<img src="/icons/eye-outline.svg" alt="eye-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon.
+  </Accordion>
+  <Accordion title="Change Details Window">
+    This window presents a side-by-side comparison of the "before" and "after" states of a change:
+    - **Field:** Indicates which field was changed (e.g., "Original Budget").
+    - **Old Value:** Shows the value before the change.
+    - **New Value:** Shows the new value after the change.
+  </Accordion>
+</AccordionGroup>
+
+<Info>
+This tool is crucial for tracking all movements on the budget, identifying potential errors, and ensuring coordination among team members.
+</Info>

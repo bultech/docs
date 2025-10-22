@@ -13,148 +13,308 @@
     "library": "fontawesome"
   },
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Kullanıcı Kılavuzu",
-        "groups": [
+        "language": "en",
+        "tabs": [
           {
-            "group": "Başlarken",
-            "pages": ["giris/index"]
-          },
-          {
-            "group": "Platform Kuralları",
-            "pages": [
-              "platform-kurallari/limitler-ve-kisitlamalar",
-              "platform-kurallari/roller-ve-yetkiler-rbac"
+            "tab": "User Guide",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "pages": ["en/introduction/index"]
+              },
+              {
+                "group": "Platform Rules",
+                "pages": [
+                  "en/platform-rules/limits-and-restrictions",
+                  "en/platform-rules/roles-and-permissions-rbac"
+                ]
+              },
+              {
+                "group": "Authentication",
+                "pages": [
+                  "en/authentication/login",
+                  "en/authentication/signup",
+                  "en/authentication/password-reset"
+                ]
+              },
+              {
+                "group": "Account Management",
+                "pages": [
+                  "en/account-management/edit-profile",
+                  "en/account-management/change-password",
+                  "en/account-management/session-management",
+                  "en/account-management/user-card"
+                ]
+              },
+              {
+                "group": "Company Operations",
+                "pages": [
+                  "en/company-operations/company-creation",
+                  "en/company-operations/company-settings",
+                  "en/company-operations/approval-process",
+                  "en/company-operations/company-overview",
+                  "en/company-operations/company-dashboard-widgets"
+                ]
+              },
+              {
+                "group": "Project Operations",
+                "pages": [
+                  "en/project-operations/project-creation",
+                  "en/project-operations/project-list",
+                  "en/project-operations/project-settings"
+                ]
+              },
+              {
+                "group": "Team Management",
+                "pages": [
+                  "en/team-management/company-team",
+                  "en/team-management/project-team"
+                ]
+              },
+              {
+                "group": "Navigation",
+                "pages": [
+                  "en/navigation/left-menu-and-transitions",
+                  "en/navigation/right-menu-and-contextual-tools"
+                ]
+              },
+              {
+                "group": "General Features",
+                "pages": [
+                  "en/general-features/comments",
+                  "en/general-features/spotlight-search",
+                  "en/general-features/dinobot-ai",
+                  "en/general-features/magic-bar",
+                  "en/general-features/support-center",
+                  "en/general-features/data-tables",
+                  "en/general-features/recents"
+                ]
+              },
+              {
+                "group": "General Settings",
+                "pages": ["en/general-settings/settings-panel"]
+              },
+              {
+                "group": "Cost Management",
+                "pages": [
+                  "en/cost-management/detailed-budget",
+                  "en/cost-management/change-orders",
+                  "en/cost-management/spending",
+                  "en/cost-management/anticipated-cost-report",
+                  "en/cost-management/anticipated-cost-settings",
+                  "en/cost-management/comparison",
+                  "en/cost-management/change-history"
+                ]
+              },
+              {
+                "group": "Commitments",
+                "pages": [
+                  "en/commitments/contract-log",
+                  "en/commitments/contract-creation-editing"
+                ]
+              },
+              {
+                "group": "Work Management",
+                "pages": [
+                  "en/work-management/views-and-basic-operations",
+                  "en/work-management/task-creation-editing",
+                  "en/work-management/kanban-board",
+                  "en/work-management/timeline"
+                ]
+              },
+              {
+                "group": "Daily Reports",
+                "pages": [
+                  "en/daily-reports/report-view",
+                  "en/daily-reports/report-details"
+                ]
+              },
+              {
+                "group": "Meeting Minutes",
+                "pages": [
+                  "en/meeting-minutes/minutes-list",
+                  "en/meeting-minutes/minutes-creation-editing"
+                ]
+              },
+              {
+                "group": "Project Settings",
+                "pages": [
+                  "en/project-settings/wbs",
+                  "en/project-settings/subcontractors-and-contacts",
+                  "en/project-settings/module-setup"
+                ]
+              },
+              {
+                "group": "Artificial Intelligence",
+                "pages": ["en/ai/ai-chat-page"]
+              },
+              {
+                "group": "Analytics",
+                "pages": ["en/analytics/analytics-dashboard"]
+              },
+              {
+                "group": "Notifications",
+                "pages": ["en/notifications/notification-center"]
+              },
+              {
+                "group": "Billing",
+                "pages": ["en/billing/balance-and-payments"]
+              }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "language": "tr",
+        "tabs": [
           {
-            "group": "Giriş İşlemleri",
-            "pages": [
-              "giris-islemleri/giris-yapma",
-              "giris-islemleri/kayit-olma",
-              "giris-islemleri/sifre-sifirlama"
+            "tab": "Kullanıcı Kılavuzu",
+            "groups": [
+              {
+                "group": "Başlarken",
+                "pages": ["tr/giris/index"]
+              },
+              {
+                "group": "Platform Kuralları",
+                "pages": [
+                  "tr/platform-kurallari/limitler-ve-kisitlamalar",
+                  "tr/platform-kurallari/roller-ve-yetkiler-rbac"
+                ]
+              },
+              {
+                "group": "Giriş İşlemleri",
+                "pages": [
+                  "tr/giris-islemleri/giris-yapma",
+                  "tr/giris-islemleri/kayit-olma",
+                  "tr/giris-islemleri/sifre-sifirlama"
+                ]
+              },
+              {
+                "group": "Hesap Yönetimi",
+                "pages": [
+                  "tr/hesap-yonetimi/profil-duzenleme",
+                  "tr/hesap-yonetimi/sifre-degistirme",
+                  "tr/hesap-yonetimi/oturum-yonetimi",
+                  "tr/hesap-yonetimi/kullanici-karti"
+                ]
+              },
+              {
+                "group": "Şirket İşlemleri",
+                "pages": [
+                  "tr/sirket-islemleri/sirket-olusturma",
+                  "tr/sirket-islemleri/sirket-ayarlari",
+                  "tr/sirket-islemleri/onay-sureci",
+                  "tr/sirket-islemleri/sirket-genel-bakis",
+                  "tr/sirket-islemleri/sirket-panosu-widgetlari"
+                ]
+              },
+              {
+                "group": "Proje İşlemleri",
+                "pages": [
+                  "tr/proje-islemleri/proje-olusturma",
+                  "tr/proje-islemleri/proje-listesi",
+                  "tr/proje-islemleri/proje-ayarlari"
+                ]
+              },
+              {
+                "group": "Ekip Yönetimi",
+                "pages": [
+                  "tr/ekip-yonetimi/sirket-ekibi",
+                  "tr/ekip-yonetimi/proje-ekibi"
+                ]
+              },
+              {
+                "group": "Navigasyon",
+                "pages": [
+                  "tr/navigasyon/sol-menu-ve-gecisler",
+                  "tr/navigasyon/sag-menu-ve-baglamsal-araclar"
+                ]
+              },
+              {
+                "group": "Genel Özellikler",
+                "pages": [
+                  "tr/genel-ozellikler/yorumlar",
+                  "tr/genel-ozellikler/spotlight-arama",
+                  "tr/genel-ozellikler/dinobot-ai",
+                  "tr/genel-ozellikler/magic-bar",
+                  "tr/genel-ozellikler/destek-merkezi",
+                  "tr/genel-ozellikler/veri-tablolari",
+                  "tr/genel-ozellikler/son-goruntulenenler"
+                ]
+              },
+              {
+                "group": "Genel Ayarlar",
+                "pages": ["tr/genel-ayarlar/ayarlar-paneli"]
+              },
+              {
+                "group": "Maliyet Yönetimi",
+                "pages": [
+                  "tr/maliyet-yonetimi/detayli-butce",
+                  "tr/maliyet-yonetimi/degisiklik-emirleri",
+                  "tr/maliyet-yonetimi/harcamalar",
+                  "tr/maliyet-yonetimi/ongorulen-maliyet-raporu",
+                  "tr/maliyet-yonetimi/ongorulen-maliyet-ayarlari",
+                  "tr/maliyet-yonetimi/karsilastirma",
+                  "tr/maliyet-yonetimi/degisiklik-gecmisi"
+                ]
+              },
+              {
+                "group": "Taahhütler",
+                "pages": [
+                  "tr/taahhutler/sozlesme-gunlugu",
+                  "tr/taahhutler/sozlesme-olusturma-duzenleme"
+                ]
+              },
+              {
+                "group": "İş Yönetimi",
+                "pages": [
+                  "tr/is-yonetimi/gorunumler-ve-temel-islemler",
+                  "tr/is-yonetimi/gorev-olusturma-duzenleme",
+                  "tr/is-yonetimi/kanban-panosu",
+                  "tr/is-yonetimi/zaman-cizelgesi"
+                ]
+              },
+              {
+                "group": "Günlük Raporlar",
+                "pages": [
+                  "tr/gunluk-raporlar/rapor-gorunumu",
+                  "tr/gunluk-raporlar/rapor-detaylari"
+                ]
+              },
+              {
+                "group": "Toplantı Tutanakları",
+                "pages": [
+                  "tr/toplanti-tutanaklari/tutanak-listesi",
+                  "tr/toplanti-tutanaklari/tutanak-olusturma-duzenleme"
+                ]
+              },
+              {
+                "group": "Proje Ayarları",
+                "pages": [
+                  "tr/proje-ayarlari/is-kirilim-yapisi",
+                  "tr/proje-ayarlari/alt-yukleniciler-ve-kisiler",
+                  "tr/proje-ayarlari/modul-kurulumu"
+                ]
+              },
+              {
+                "group": "Yapay Zeka",
+                "pages": ["tr/yapay-zeka/ai-sohbet-sayfasi"]
+              },
+              {
+                "group": "Analitikler",
+                "pages": ["tr/analitikler/analitik-panosu"]
+              },
+              {
+                "group": "Bildirimler",
+                "pages": ["tr/bildirimler/bildirim-merkezi"]
+              },
+              {
+                "group": "Faturalandırma",
+                "pages": ["tr/faturalandirma/bakiye-ve-odemeler"]
+              }
             ]
-          },
-          {
-            "group": "Hesap Yönetimi",
-            "pages": [
-              "hesap-yonetimi/profil-duzenleme",
-              "hesap-yonetimi/sifre-degistirme",
-              "hesap-yonetimi/oturum-yonetimi",
-              "hesap-yonetimi/kullanici-karti"
-            ]
-          },
-          {
-            "group": "Şirket İşlemleri",
-            "pages": [
-              "sirket-islemleri/sirket-olusturma",
-              "sirket-islemleri/sirket-ayarlari",
-              "sirket-islemleri/onay-sureci",
-              "sirket-islemleri/sirket-genel-bakis",
-              "sirket-islemleri/sirket-panosu-widgetlari"
-            ]
-          },
-          {
-            "group": "Proje İşlemleri",
-            "pages": [
-              "proje-islemleri/proje-olusturma",
-              "proje-islemleri/proje-listesi",
-              "proje-islemleri/proje-ayarlari"
-            ]
-          },
-          {
-            "group": "Ekip Yönetimi",
-            "pages": ["ekip-yonetimi/sirket-ekibi", "ekip-yonetimi/proje-ekibi"]
-          },
-          {
-            "group": "Navigasyon",
-            "pages": [
-              "navigasyon/sol-menu-ve-gecisler",
-              "navigasyon/sag-menu-ve-baglamsal-araclar"
-            ]
-          },
-          {
-            "group": "Genel Özellikler",
-            "pages": [
-              "genel-ozellikler/yorumlar",
-              "genel-ozellikler/spotlight-arama",
-              "genel-ozellikler/dinobot-ai",
-              "genel-ozellikler/magic-bar",
-              "genel-ozellikler/destek-merkezi",
-              "genel-ozellikler/veri-tablolari",
-              "genel-ozellikler/son-goruntulenenler"
-            ]
-          },
-          {
-            "group": "Genel Ayarlar",
-            "pages": ["genel-ayarlar/ayarlar-paneli"]
-          },
-          {
-            "group": "Maliyet Yönetimi",
-            "pages": [
-              "maliyet-yonetimi/detayli-butce",
-              "maliyet-yonetimi/degisiklik-emirleri",
-              "maliyet-yonetimi/harcamalar",
-              "maliyet-yonetimi/ongorulen-maliyet-raporu",
-              "maliyet-yonetimi/ongorulen-maliyet-ayarlari",
-              "maliyet-yonetimi/karsilastirma",
-              "maliyet-yonetimi/degisiklik-gecmisi"
-            ]
-          },
-          {
-            "group": "Taahhütler",
-            "pages": [
-              "taahhutler/sozlesme-gunlugu",
-              "taahhutler/sozlesme-olusturma-duzenleme"
-            ]
-          },
-          {
-            "group": "İş Yönetimi",
-            "pages": [
-              "is-yonetimi/gorunumler-ve-temel-islemler",
-              "is-yonetimi/gorev-olusturma-duzenleme",
-              "is-yonetimi/kanban-panosu",
-              "is-yonetimi/zaman-cizelgesi"
-            ]
-          },
-          {
-            "group": "Günlük Raporlar",
-            "pages": [
-              "gunluk-raporlar/rapor-gorunumu",
-              "gunluk-raporlar/rapor-detaylari"
-            ]
-          },
-          {
-            "group": "Toplantı Tutanakları",
-            "pages": [
-              "toplanti-tutanaklari/tutanak-listesi",
-              "toplanti-tutanaklari/tutanak-olusturma-duzenleme"
-            ]
-          },
-          {
-            "group": "Proje Ayarları",
-            "pages": [
-              "proje-ayarlari/is-kirilim-yapisi",
-              "proje-ayarlari/alt-yukleniciler-ve-kisiler",
-              "proje-ayarlari/modul-kurulumu"
-            ]
-          },
-          {
-            "group": "Yapay Zeka",
-            "pages": ["yapay-zeka/ai-sohbet-sayfasi"]
-          },
-          {
-            "group": "Analitikler",
-            "pages": ["analitikler/analitik-panosu"]
-          },
-          {
-            "group": "Bildirimler",
-            "pages": ["bildirimler/bildirim-merkezi"]
-          },
-          {
-            "group": "Faturalandırma",
-            "pages": ["faturalandirma/bakiye-ve-odemeler"]
           }
         ]
       }
@@ -207,5 +367,23 @@
     "socials": {
       "linkedin": "https://www.linkedin.com/company/bul-tech/"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/en",
+      "destination": "/en/introduction"
+    },
+    {
+      "source": "/en/",
+      "destination": "/en/introduction"
+    },
+    {
+      "source": "/tr",
+      "destination": "/tr/giris"
+    },
+    {
+      "source": "/tr/",
+      "destination": "/tr/giris"
+    }
+  ]
 }

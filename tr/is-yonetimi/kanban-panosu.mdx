@@ -1,0 +1,31 @@
+---
+title: "Kanban Panosu Kullanımı"
+description: "Kanban Panosu, görevlerinizi iş akışınızdaki durumlarına göre görsel olarak yönetmenizi sağlayan bir araçtır."
+---
+
+# Kanban Panosu Kullanımı
+
+Kanban Panosu, görevlerinizi iş akışınızdaki durumlarına göre görsel olarak yönetmenizi sağlayan bir araçtır. Pano, görev durumlarını temsil eden **Sütunlar** ve görevleri temsil eden **Kartlar**'dan oluşur.
+
+## Temel İşlemler
+
+<AccordionGroup>
+  <Accordion title="Görev Durumunu Değiştirme">
+    Bir görevin durumunu değiştirmek için, ilgili kartı farenizle tutup bir sütundan diğerine **sürükleyip bırakmanız** yeterlidir.
+  </Accordion>
+  <Accordion title="Yeni Görev Ekleme">
+    Her sütunun altında bulunan "**+ Task Ekle**" butonuna tıklayarak doğrudan o durumda yeni bir görev oluşturabilirsiniz. Görev başlığını girip Enter'a basmanız yeterlidir.
+  </Accordion>
+  <Accordion title="Sütunları Yönetme (Durum Ekleme/Düzenleme/Silme)">
+    - **Yeni Sütun Ekleme:** Panonun en sağında bulunan "**+ Durum Ekle**" butonuna tıklayarak yeni bir iş akışı durumu (sütun) ekleyebilirsiniz.
+    - **Sütunları Düzenleme:** Bir sütun başlığının üzerine fare ile geldiğinizde beliren **Düzenle** (<img src="/icons/edit-outline.svg" alt="edit-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayarak sütunun adını ve rengini değiştirebilirsiniz.
+    - **Sütunları Silme:** Düzenleme ikonunun yanında beliren **Sil** (<img src="/icons/trash-can-outline.svg" alt="trash-can-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayarak bir sütunu silebilirsiniz.
+    - **Sütunları Sıralama:** Bir sütun başlığını farenizle tutup sola veya sağa sürükleyerek iş akışınıza göre yeniden sıralayabilirsiniz.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  **Yetkilendirme:**
+  - **Sütun Yönetimi:** Kanban panosundaki durumları (sütunları) yönetme işlemleri genellikle Proje Yöneticisi gibi [yüksek yetkili rollere](/tr/platform-kurallari/roller-ve-yetkiler-rbac) sahip kullanıcılarla sınırlıdır.
+  - **Görev Taşıma:** Bir görevin durumunu değiştirmek (kartı bir sütundan diğerine taşımak), görevi düzenleme yetkisine sahip olmayı gerektirir.
+</Note>

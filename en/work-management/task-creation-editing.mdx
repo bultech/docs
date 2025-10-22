@@ -1,0 +1,44 @@
+---
+title: "Task Creation and Editing"
+description: "This interface allows you to create new tasks or epics and manage all the details of existing ones."
+---
+
+# Task Creation and Editing
+
+This interface allows you to create new tasks or epics and manage all the details of existing ones.
+
+## Accessing the Form
+
+- **Creation:** Click the "**Create Task**" button in the top right of any [Work Management view](/en/work-management/views-and-basic-operations).
+- **Editing:** Click on any task or epic from the List, Kanban, or Timeline views.
+
+## Task Form Interface
+
+The form opens as a side panel and contains all the information about the task.
+
+<AccordionGroup>
+  <Accordion title="Basic Information">
+    - **Type:** Allows you to select whether the task is an **Epic** or a **Task**.
+    - **Title:** The field where you enter the name of the task.
+    - **Status:** A dropdown menu where you select the current status of the task (e.g., To Do, In Progress).
+    - **Description:** A rich text editor where you can enter detailed information about the task.
+  </Accordion>
+  <Accordion title="Details">
+    - **Assignee:** A user list where you select who will perform the task.
+    - **Reporter:** Shows the person who created the task (usually assigned automatically).
+    - **Watchers:** Allows you to select people to be notified of updates related to the task.
+    - **Start and End Date:** Allows you to set the planned start and end dates of the task.
+    - **Parent Task:** If you are creating a **Task**, this allows you to link it under an **Epic**.
+    - **Priority:** Allows you to set the importance of the task (High, Medium, Low, etc.).
+    - **Full Code:** Allows you to associate the task with a cost item.
+  </Accordion>
+  <Accordion title="Attachments">
+    An area where you can upload files (images, documents, etc.) related to the task.
+  </Accordion>
+  <Accordion title="Child Tasks">
+    If you are editing an **Epic**, all tasks linked under this epic are listed here.
+  </Accordion>
+  <Accordion title="Comments">
+    An area where you can communicate with team members about the task and [leave comments](/en/general-features/comments).
+  </Accordion>
+</AccordionGroup>

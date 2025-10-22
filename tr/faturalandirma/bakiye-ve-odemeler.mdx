@@ -1,0 +1,50 @@
+---
+title: "Bakiye ve Ödemeler"
+description: "Bu bölüm, şirketinizin platform üzerindeki finansal işlemlerini, mevcut bakiyesini ve ödeme geçmişini yönetmenizi sağlar."
+---
+
+# Bakiye ve Ödemeler
+
+Bu bölüm, şirketinizin platform üzerindeki finansal işlemlerini, mevcut bakiyesini ve ödeme geçmişini yönetmenizi sağlar.
+
+## Bakiye ve Ödemeler Sayfasına Erişim
+
+- **Doğrudan URL:** `https://app.bultech.co/company/:companyId/detail/balance`
+- **Arayüz Yolu:**
+  1.  Sol menüden **Şirket** (<img src="/icons/view-dashboard-outline.svg" alt="view-dashboard-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayın.
+  2.  Üst menüden **Bakiye** (<img src="/icons/wallet-outline.svg" alt="wallet-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) sekmesine tıklayın.
+
+## Arayüz Bileşenleri
+
+Bu sayfa iki ana sekmeden oluşur:
+
+### 1. Bakiye Yükle (Checkout)
+
+Bu sekme, şirket hesabınıza bakiye eklemenizi sağlar.
+
+- **Bakiye Miktarı:** Yüklemek istediğiniz tutarı girebileceğiniz bir alandır.
+- **Ödeme Yöntemi:** Kredi kartı bilgilerinizi gireceğiniz güvenli bir form alanıdır.
+- **Ödeme Yap Butonu:** Gerekli bilgileri doldurduktan sonra ödemeyi tamamlamak için kullanılır.
+
+### 2. İşlemler (Transactions)
+
+Bu sekme, şirketinizle ilgili tüm finansal işlemlerin bir listesini sunar.
+
+- **İşlem Tablosu:**
+    *   **Tarih:** İşlemin yapıldığı tarihi gösterir.
+    *   **Açıklama:** İşlemin neyle ilgili olduğunu belirtir (örn: "Bakiye Yüklemesi", "Aylık Abonelik Ücreti").
+    *   **Tutar:** İşlemin mali değerini gösterir.
+    *   **Durum:** İşlemin durumunu belirtir (örn: "Başarılı", "Başarısız", "Beklemede").
+    *   **Fatura:** Başarılı işlemler için faturanızı indirmenizi sağlayan bir bağlantı veya buton içerir.
+
+## Ödeme Süreci
+
+1.  **Bakiye Yükle** sekmesine gidin.
+2.  Yüklemek istediğiniz tutarı girin.
+3.  Kredi kartı bilgilerinizi (Kart Numarası, Son Kullanma Tarihi, CVC) ilgili alanlara girin.
+4.  "**Ödeme Yap**" butonuna tıklayın.
+5.  İşlem başarılı olduğunda, yüklediğiniz tutar şirket bakiyenize yansıtılır ve **İşlemler** sekmesinde yeni bir kayıt oluşturulur.
+
+## Önemli Notlar
+
+- **Yetkilendirme:** Bu sayfa, şirketin finansal bilgilerini içerdiği için yalnızca **Şirket Sahibi (Company Owner)** veya **Şirket Yönticisi (Company Admin)** gibi [yüksek yetkili rollere](/tr/platform-kurallari/roller-ve-yetkiler-rbac) sahip kullanıcılar tarafından görüntülenebilir ve yönetilebilir. Diğer kullanıcılar bu sekmeyi göremezler.

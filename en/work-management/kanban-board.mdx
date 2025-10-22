@@ -1,0 +1,31 @@
+---
+title: "Using the Kanban Board"
+description: "The Kanban Board is a tool that allows you to visually manage your tasks according to their status in your workflow."
+---
+
+# Using the Kanban Board
+
+The Kanban Board is a tool that allows you to visually manage your tasks according to their status in your workflow. The board consists of **Columns** representing task statuses and **Cards** representing tasks.
+
+## Basic Operations
+
+<AccordionGroup>
+  <Accordion title="Changing Task Status">
+    To change the status of a task, simply **drag and drop** the corresponding card from one column to another with your mouse.
+  </Accordion>
+  <Accordion title="Adding a New Task">
+    You can create a new task directly in a specific status by clicking the "**+ Add Task**" button at the bottom of each column. Just enter the task title and press Enter.
+  </Accordion>
+  <Accordion title="Managing Columns (Adding/Editing/Deleting Statuses)">
+    - **Add New Column:** You can add a new workflow status (column) by clicking the "**+ Add Status**" button on the far right of the board.
+    - **Edit Columns:** You can change the name and color of a column by clicking the **Edit** (<img src="/icons/pencil-outline.svg" alt="edit-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon that appears when you hover over a column header.
+    - **Delete Columns:** You can delete a column by clicking the **Delete** (<img src="/icons/trash-can-outline.svg" alt="trash-can-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon that appears next to the edit icon.
+    - **Reorder Columns:** You can reorder the columns according to your workflow by dragging a column header to the left or right.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  **Authorization:**
+  - **Column Management:** Managing statuses (columns) on the Kanban board is usually restricted to users with [high-level roles](/en/platform-rules/roles-and-permissions-rbac) such as Project Manager.
+  - **Moving Tasks:** Changing the status of a task (moving a card from one column to another) requires permission to edit the task.
+</Note>

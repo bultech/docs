@@ -1,0 +1,44 @@
+---
+title: "Contract Log"
+description: "The Contract Log allows you to manage all subcontractor contracts, commitments, and related financial details in your project from a central location."
+---
+
+# Contract Log
+
+The Contract Log allows you to manage all subcontractor contracts, commitments, and related financial details in your project from a central location.
+
+## Accessing the Page
+
+While inside the relevant project, simply click the **Commitments** (<img src="/icons/file-sign.svg" alt="file-sign" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the left menu.
+
+Direct URL: `https://app.bultech.co/company/:companyId/project/:projectId/commitments/contract-log`
+
+## Interface and Actions
+
+<AccordionGroup>
+  <Accordion title="Global Actions (Top Right Corner)">
+    - **Create Contract Log:** Redirects to the [Contract Creation](/en/commitments/contract-creation-editing) form to create a new contract record.
+    - **Filter (<img src="/icons/filter-outline.svg" alt="filter-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Filters contracts by their status or whether files have been attached.
+    - **Search:** Performs a text-based search within the list.
+    - **Export to Excel (<img src="/icons/file-excel-box.svg" alt="file-excel-box" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Downloads the current contract list in Excel format.
+  </Accordion>
+  <Accordion title="Contract Table Columns">
+    - **Contract Number (#):** A unique, clickable number to view the contract details.
+    - **Contracted Company:** The subcontractor with whom the contract was made.
+    - **Budget:** The budget allocated for the related work item.
+    - **Original Contract Amount:** The initial agreed-upon amount of the contract.
+    - **Change Order Amount:** The total of change orders added to the contract.
+    - **Status:** A label showing the current status of the contract (Signed, Unsigned, Pending).
+    - **Files:** An icon indicating attached files.
+    - **Final Contract Amount:** The final amount after the original amount and change orders.
+  </Accordion>
+  <Accordion title="Row Actions">
+    When you hover over a contract row, action icons appear on the far right of the row:
+    - **Edit (<img src="/icons/note-edit-outline.svg" alt="note-edit-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Opens the form to edit the contract information.
+    - **Delete (<img src="/icons/delete-outline.svg" alt="delete-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Opens a confirmation window to delete the contract.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  **Authorization:** Creating, editing, and deleting contracts depends on the user's [roles and permissions](/en/platform-rules/roles-and-permissions-rbac).
+</Note>

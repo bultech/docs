@@ -1,0 +1,42 @@
+---
+title: "Toplantı Tutanakları (Önizleme)"
+description: "Bu modül, proje toplantılarınızı planlamanıza, kaydetmenize ve yapay zeka desteğiyle otomatik olarak tutanak oluşturmanıza olanak tanır."
+---
+
+# Toplantı Tutanakları (Önizleme)
+
+Bu modül, proje toplantılarınızı planlamanıza, kaydetmenize ve yapay zeka desteğiyle otomatik olarak tutanak oluşturmanıza olanak tanır.
+
+## Sayfaya Erişim
+
+İlgili projenin içindeyken, sol menüden **Toplantı Tutanakları** (<img src="/icons/calendar-outline.svg" alt="calendar-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklamanız yeterlidir.
+
+Doğrudan URL: `https://app.bultech.co/company/:companyId/project/:projectId/meeting-minutes/preview`
+
+## Arayüz Görünümleri
+
+Bu sayfa, toplantılarınızı iki farklı modda görüntülemenizi sağlar:
+
+<CardGroup cols={2}>
+  <Card title="Takvim Görünümü (Varsayılan)" icon="calendar-month-outline">
+    Toplantılarınızı aylık, haftalık veya günlük bir takvim üzerinde görselleştirir. Bir etkinliğe tıklayarak detaylara gidebilirsiniz.
+  </Card>
+  <Card title="Tablo Görünümü" icon="table-large">
+    Tüm toplantı tutanaklarınızı, detaylarıyla birlikte bir tablo formatında listeler.
+  </Card>
+</CardGroup>
+
+<Tip>
+  Her iki görünümde de sayfanın sağ üst köşesinde bulunan mavi renkli "**Toplantı Tutanağı Oluştur**" butonu ile [yeni bir toplantı planlama](/tr/toplanti-tutanaklari/tutanak-olusturma-duzenleme) formuna gidebilirsiniz.
+</Tip>
+
+## Önemli Notlar
+
+<AccordionGroup>
+    <Accordion title="Yetkilendirme">
+        Yeni tutanak oluşturma, mevcut tutanakları görüntüleme, düzenleme ve silme işlemleri kullanıcının [rollerine ve yetkilerine](/tr/platform-kurallari/roller-ve-yetkiler-rbac) bağlıdır.
+    </Accordion>
+    <Accordion title="Görünürlük">
+        Kullanıcılar genellikle yalnızca katılımcı olarak eklendikleri veya kendilerinin oluşturduğu toplantıları görebilirler. Proje Yöneticisi gibi daha geniş yetkilere sahip roller, projedeki tüm toplantıları görüntüleyebilir.
+    </Accordion>
+</AccordionGroup>

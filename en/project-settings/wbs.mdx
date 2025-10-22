@@ -1,0 +1,49 @@
+---
+title: "Work Breakdown Structure (Cost Code & Type)"
+description: "This section allows you to manage the Cost Codes and Cost Types that are fundamental to creating your project's cost structure."
+---
+
+# Work Breakdown Structure (Cost Code & Type)
+
+This section allows you to manage the Cost Codes and Cost Types that are fundamental to creating your project's cost structure. These structures are used in the Detailed Budget and other cost modules.
+
+## Accessing the Page
+
+<Steps>
+  <Step title="Go to Project Settings">
+    While inside the relevant project, click the **Project Settings** (<img src="/icons/office-building-cog-outline.svg" alt="office-building-cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the left menu.
+  </Step>
+  <Step title="Open the Work Breakdown Structure Tab">
+    Click the **Work Breakdown Structure** (<img src="/icons/counter.svg" alt="counter" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) tab in the top menu.
+  </Step>
+</Steps>
+
+## Management Areas
+
+<AccordionGroup>
+  <Accordion title="Cost Code">
+    This tab allows you to classify your costs in a hierarchical order.
+    - **Interface:** A tree structure showing divisions on the left panel and a table listing the cost codes for the selected division on the right panel.
+    - **Actions (With Edit Mode Active):**
+        - **Add New Code:** You can add a new code by clicking on the empty row at the bottom of the table.
+        - **Edit:** You can edit an existing code or description by clicking on a cell in the table.
+        - **Delete:** You can delete a code with the "Delete Row" option from the right-click menu.
+        - **Import/Export:** You can bulk import or export your cost codes in Excel or CSV format using the buttons in the top right.
+  </Accordion>
+  <Accordion title="Cost Type">
+    This tab allows you to classify your costs by type (e.g., Labor, Material, Equipment).
+    - **Interface:** Consists of a simple table showing cost types, their codes, and descriptions.
+    - **Actions (With Edit Mode Active):** As in the Cost Code tab, you can edit by clicking on cells, delete by right-clicking, and bulk import/export.
+  </Accordion>
+</AccordionGroup>
+
+## Important Notes
+
+<AccordionGroup>
+    <Accordion title="Authorization">
+        Managing Cost Codes and Cost Types is restricted to users with [high-level roles](/en/platform-rules/roles-and-permissions-rbac) such as Project Manager.
+    </Accordion>
+    <Accordion title="Impact on Modules">
+        The structures created here form the basis of all cost management modules for the project. For example, when creating a cost item in the **Detailed Budget**, you need to select the Cost Code and Cost Type defined here.
+    </Accordion>
+</AccordionGroup>

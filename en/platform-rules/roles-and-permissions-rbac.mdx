@@ -1,0 +1,62 @@
+---
+title: "Roles and Permissions (RBAC)"
+description: "The Bul Tech platform uses a flexible and powerful Role-Based Access Control (RBAC) system to manage user access to data and features."
+---
+
+# Roles and Permissions: Role-Based Access Control (RBAC)
+
+The Bul Tech platform uses a flexible and powerful Role-Based Access Control (RBAC) system to manage user access to data and features. This system ensures data security and workflow order by allowing each user to access information and perform actions only within their area of responsibility.
+
+## Core Concepts of the RBAC System
+
+<AccordionGroup>
+  <Accordion title="Role">
+    A label created by combining a set of permissions. For example, "Budget Viewer" or "Project Manager" are roles.
+  </Accordion>
+  <Accordion title="Permission">
+    The most basic action on the platform. A permission defines the right to perform a specific action (View, Create, Edit, Delete) on a specific piece of data.
+    **Example:** "**Deleting** a row in the Detailed Budget module" is a permission.
+  </Accordion>
+  <Accordion title="Scope">
+    Specifies where a role is applicable. Bul Tech has two main scopes:
+    - **Company Scope:** Permissions apply to the entire company the user is a part of.
+    - **Project Scope:** Permissions apply only to a specific project.
+  </Accordion>
+</AccordionGroup>
+
+## Main User Types and Hierarchy
+
+<AccordionGroup>
+  <Accordion title="Company Owner">
+    **Permissions:** The most privileged user in the company. Has full access to all projects, modules, and settings. Can invite users, manage their roles, and access billing information.
+    **Assignment:** When a company is created, the creator automatically becomes the "Company Owner". This role can be transferred to another user.
+  </Accordion>
+  <Accordion title="Company Admin">
+    **Permissions:** Has broad permissions similar to the Company Owner, but generally cannot perform the most critical operations like billing. Can manage company-wide projects and users.
+  </Accordion>
+  <Accordion title="Project Admin">
+    **Permissions:** Has full authority over the projects they are assigned to. Can manage the project team, and create, edit, and delete data in all modules. However, their permissions are limited to their assigned projects.
+  </Accordion>
+  <Accordion title="Project Member">
+    **Permissions:** The most restricted user type. Their permissions are limited to the roles assigned to them. For example, a project member might only have "Budget View" and "Task Edit" permissions.
+  </Accordion>
+</AccordionGroup>
+
+## Role and Permission Management Interfaces
+
+You can manage permissions at two main levels:
+
+<CardGroup cols={2}>
+  <Card title="Company-Level Role Management" href="/team-management/company-team">
+    From this interface, you can set a user's company-wide roles (e.g., making them a Company Admin) and their **default** permissions for all projects.
+  </Card>
+  <Card title="Project-Level Role Management" href="/team-management/project-team">
+    This interface allows you to set a user's permissions **specifically for that project**. A setting made here overrides the user's company-wide roles.
+  </Card>
+</CardGroup>
+
+<Note>
+  **Important Notes:**
+  - **Data Privacy:** Thanks to the RBAC system, it is impossible for a user to access any data they are not authorized to see (project, budget item, report, etc.) through search, analytics, or the AI assistant.
+  - **Flexibility:** With module-based authorization, you can create very detailed and customized access profiles for each user.
+</Note>

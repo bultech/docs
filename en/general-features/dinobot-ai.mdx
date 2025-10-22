@@ -1,0 +1,45 @@
+---
+title: "DinoBot AI Assistant"
+description: "DinoBot is your AI-powered personal assistant that you can ask questions about your project's data, perform analyses, and even execute certain actions."
+---
+
+# DinoBot AI Assistant
+
+DinoBot is your AI-powered personal assistant that you can ask questions about your project's data, perform analyses, and even execute certain actions. You can access DinoBot from two different interfaces.
+
+<CardGroup cols={2}>
+  <Card title="Quick Access Panel" icon="lightning-bolt">
+    Designed for asking questions quickly from any page.
+    - **Keyboard Shortcut:** `CTRL + J` (Windows) or `⌘ + J` (macOS)
+    - **Interface Path:** Click on the **Bul icon** (<img src="/images/chatBot.svg" alt="chatbot" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) at the bottom of the right menu.
+  </Card>
+  <Card title="Full-Page Chat Interface" icon="chat-outline" href="/en/ai/ai-chat-page">
+    A dedicated chat page for more complex analyses and a focused workspace.
+    - **Interface Path:** While inside the relevant project, click the **AI Chat** (<img src="/icons/chat-outline.svg" alt="chat-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the left menu.
+  </Card>
+</CardGroup>
+
+## General Chat Features
+
+<AccordionGroup>
+  <Accordion title="Asking Questions and Getting Answers">
+    Type any question about your project into the text box at the bottom and press `Enter`. DinoBot analyzes your question and generates an answer based on the relevant data in your project.
+  </Accordion>
+  <Accordion title="File Upload">
+    By clicking the **paperclip** (<img src="/icons/paperclip.svg" alt="paperclip" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon to the left of the text box, you can upload documents like PDFs related to your question. DinoBot will also consider the content of this document when answering your question.
+  </Accordion>
+  <Accordion title="Sources">
+    DinoBot usually indicates the data sources or related documents it used to generate its answer below the response.
+  </Accordion>
+</AccordionGroup>
+
+## Example Questions
+
+- "List the top 5 costliest cost codes."
+- "What is the total amount of unapproved change orders?"
+- "Summarize the contract with subcontractor X."
+- "What are the risky clauses in the document I uploaded?"
+
+<Note>
+  **Authorization and Data Access:** The data DinoBot can access is limited by your user [role and permissions](/en/platform-rules/roles-and-permissions-rbac). DinoBot cannot access data that you are not authorized to see.
+</Note>

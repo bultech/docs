@@ -1,0 +1,49 @@
+---
+title: "Project Team Management"
+description: "Each project can have its own dedicated team. This section allows you to manage the users who will work on a specific project."
+---
+
+# Project Team Management
+
+Each project can have its own dedicated team. This section allows you to manage the users who will work on a specific project.
+
+## Accessing the Project Team Page
+
+<Steps>
+  <Step title="Go to Project Settings">
+    While inside the relevant project, click the **Project Settings** (<img src="/icons/office-building-cog-outline.svg" alt="office-building-cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the left menu.
+  </Step>
+  <Step title="Open the Project Team Tab">
+    Click the **Project Team** (<img src="/icons/account-group-outline.svg" alt="account-group-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) tab in the top menu of the page that opens.
+  </Step>
+</Steps>
+
+Direct URL: `https://app.bultech.co/company/:companyId/project/:projectId/settings/team`
+
+## Adding a New User to the Project
+
+<Steps>
+  <Step title="Open the Add Form">
+    Click the blue "**Add to Your Team**" button in the top right.
+  </Step>
+  <Step title="Select Users">
+    A window will open showing a list of users in your company who are not yet on this project. Select the users you want to add from the list.
+  </Step>
+  <Step title="Confirm">
+    Click the "**OK**" button to add the users to the project. The added users will be included in the team with default project roles.
+  </Step>
+</Steps>
+
+## Important Notes
+
+<AccordionGroup>
+  <Accordion title="Role Overriding">
+    Roles assigned to a user at the project level will override that user's company-wide roles **for that project only**. For example, you can grant "Edit" permission in this project to a user who has "View Only" permission company-wide.
+  </Accordion>
+  <Accordion title="User Limit">
+    The number of users that can be added to projects may be limited according to your company's subscription plan. For detailed information, you can review the [Limits and Restrictions](/en/platform-rules/limits-and-restrictions) page.
+  </Accordion>
+  <Accordion title="Authorization">
+    Only users with [appropriate roles](/en/platform-rules/roles-and-permissions-rbac) (e.g., Project Manager, Company Owner) can manage the project team.
+  </Accordion>
+</AccordionGroup>

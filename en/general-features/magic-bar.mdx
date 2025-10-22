@@ -1,0 +1,45 @@
+---
+title: "Magic Bar (Contextual Action Bar)"
+description: "The Magic Bar is a dynamic toolbar that appears at the bottom of the screen in a specific context, offering relevant actions you can take at that moment."
+---
+
+# Magic Bar: Contextual Action Bar
+
+The Magic Bar is a dynamic toolbar that appears at the bottom of the screen in a specific context (for example, when you select multiple items in a table), presenting relevant actions you can perform at that moment.
+
+## Activating the Magic Bar
+
+The Magic Bar automatically appears in situations where you can perform bulk actions. The most common use case is selecting multiple rows in a table.
+
+<Steps>
+  <Step title="Go to a List View">
+    For example, go to the **List View** on the **Work Management** page.
+  </Step>
+  <Step title="Select Multiple Items">
+    Check the checkboxes next to multiple tasks.
+  </Step>
+  <Step title="View the Magic Bar">
+    As soon as you make a selection, the Magic Bar will appear at the bottom-center of the screen.
+  </Step>
+</Steps>
+
+## Interface and Functions
+
+<AccordionGroup>
+  <Accordion title="Selection Counter">
+    **Text:** Shows how many items you have selected with text like "X items selected".
+  </Accordion>
+  <Accordion title="Action Buttons">
+    These are icon buttons representing actions you can perform on the selected items.
+    - **Bulk Delete (<img src="/icons/trash-can-outline.svg" alt="trash-can-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Opens a confirmation window to delete all selected items.
+    - **Bulk Edit (<img src="/icons/pencil-outline.svg" alt="pencil-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Opens a form to change a specific field (e.g., assignee, status) for all selected items at once.
+    - **Bulk Export (<img src="/icons/export.svg" alt="export" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Exports the selected items to a file (e.g., Excel, PDF).
+  </Accordion>
+  <Accordion title="Close / Clear Selection Button">
+    Click this icon (<img src="/icons/close.svg" alt="close" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) to hide the Magic Bar and clear all your selections.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  **Authorization:** The action buttons visible on the Magic Bar change dynamically based on the user's [roles and permissions](/en/platform-rules/roles-and-permissions-rbac). For example, if a user does not have "Delete" permission, the delete (<img src="/icons/trash-can-outline.svg" alt="trash-can-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon will not appear on the Magic Bar even if they make a bulk selection.
+</Note>

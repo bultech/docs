@@ -1,0 +1,41 @@
+---
+title: "Interacting with Data Tables"
+description: "Many of the platform's modules use powerful and interactive tables to manage data. This section provides basic information on how to interact with these tables."
+---
+
+# Interacting with Data Tables
+
+Many of the platform's modules use powerful and interactive tables to manage data. This section provides basic information on how to interact with these tables.
+
+<AccordionGroup>
+  <Accordion title="Edit Mode">
+    Most cost and settings tables are in a "locked" or "read-only" mode by default to prevent accidental data changes.
+
+    - **Activation:** To enter or edit data, you usually need to activate **Edit Mode** (<img src="/icons/lock-open-variant-outline.svg" alt="lock-open-variant-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) by clicking the **lock** (<img src="/icons/lock-outline.svg" alt="lock-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon, typically found in the top-right corner of the table.
+    - **Data Entry:** While in edit mode, you can directly enter data or change existing data by clicking on the cells in the table.
+    - **Adding a New Row:** When you start filling in the empty row at the bottom of the table, the system automatically adds a new empty row below it.
+    - **Saving:** The data you enter is usually saved automatically.
+  </Accordion>
+  <Accordion title="Row Actions and Context Menu">
+    In many tables, you can use the right-click menu to perform actions on a specific row.
+
+    **Common Right-Click Actions:**
+    - **Delete Row:** Permanently deletes the selected row (usually requires confirmation).
+    - **Export:** Exports the data of the selected row to PDF or another format.
+    - **View Details:** Opens a window with more details about the row.
+  </Accordion>
+  <Accordion title="Managing Columns and Views">
+    Especially in complex tables like the Detailed Budget, you can customize which columns you see.
+
+    - **Manage Table View (<img src="/icons/table-eye.svg" alt="table-eye" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Clicking this icon opens a list of all available columns. You can instantly customize the table by selecting the columns you want to see and save this view for later use.
+  </Accordion>
+  <Accordion title="Adjusting Column Width">
+    Go to a column header and move your mouse to the right edge of the header. When the cursor changes to a resize icon, you can click and drag to adjust the column's width.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  **Authorization:**
+  - **Edit Mode:** A user's ability to activate "Edit Mode" requires them to have "Edit" or higher [permissions](/en/platform-rules/roles-and-permissions-rbac) for that module.
+  - **Row Actions:** The actions that appear in the right-click menu (e.g., Delete Row) vary depending on whether the user has the necessary permissions for that action.
+</Note>

@@ -1,0 +1,56 @@
+---
+title: "Company Team Management"
+description: "This section allows you to manage all users in your company, invite new users, and edit the roles of existing users."
+---
+
+# Company Team Management
+
+This section allows you to manage all users in your company, invite new users, and edit the roles of existing users.
+
+## Accessing the Team Page
+
+<Steps>
+  <Step title="Go to the Company Dashboard">
+    Click the **Company** (<img src="/icons/view-dashboard-outline.svg" alt="view-dashboard-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the left menu.
+  </Step>
+  <Step title="Open the Team Tab">
+    Click the **Team** (<img src="/icons/account-hard-hat-outline.svg" alt="account-hard-hat-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) tab in the top menu.
+  </Step>
+</Steps>
+
+Direct URL: `https://app.bultech.co/company/:companyId/detail/employees`
+
+## Inviting a New User
+
+<Steps>
+  <Step title="Open the Invitation Form">
+    Click the blue "**Add New Team Member**" button in the top right corner.
+  </Step>
+  <Step title="Enter the Email Address">
+    In the right panel that opens, enter the email address of the person you want to invite.
+  </Step>
+  <Step title="Send the Invitation">
+    The system checks if the email is registered and sends the appropriate invitation to the user. The user's status will appear as "Pending" until the invitation is accepted.
+  </Step>
+</Steps>
+
+## User Management
+
+In the team list table, actions appear when you hover over each user's row:
+
+- **Edit (<img src="/icons/account-edit-outline.svg" alt="account-edit-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Opens a window to edit the user's title and [roles](/en/platform-rules/roles-and-permissions-rbac).
+- **Delete (<img src="/icons/delete-outline.svg" alt="delete-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Opens a confirmation window to remove the user from the company.
+
+## Important Notes
+
+<AccordionGroup>
+  <Accordion title="User Limit">
+    The number of users you can add may be limited depending on your company's subscription plan. For detailed information, please review the [Limits and Restrictions](/en/platform-rules/limits-and-restrictions) page.
+  </Accordion>
+  <Accordion title="Authorization">
+    Only users with [appropriate roles](/en/platform-rules/roles-and-permissions-rbac) (e.g., Company Owner) can invite new users and edit roles.
+  </Accordion>
+  <Accordion title="Deleting a User">
+    Deleting a user from the company permanently removes that user's access and roles in **all projects** associated with the company.
+  </Accordion>
+</AccordionGroup>

@@ -1,0 +1,46 @@
+---
+title: "Daily Reports (Preview)"
+description: "The Daily Reports module is used to record and track daily activities on the construction site (labor, equipment usage, weather, etc.)."
+---
+
+# Daily Reports (Preview)
+
+The Daily Reports module is used to record and track daily activities on the construction site (labor, equipment usage, weather, etc.).
+
+## Accessing the Page
+
+While inside the relevant project, simply click the **Daily Log** (<img src="/icons/calendar-clock-outline.svg" alt="calendar-clock-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the left menu.
+
+Direct URL: `https://app.bultech.co/company/:companyId/project/:projectId/daily-log/preview`
+
+## Calendar View
+
+This page defaults to a monthly calendar view. Each day on the calendar contains colored indicators that summarize the status of the reports for that day.
+
+<AccordionGroup>
+  <Accordion title="Status Indicators">
+    - **Green (`APPROVED`):** Indicates that all reports for that day have been approved.
+    - **Yellow (`PENDING`):** Indicates that there are reports pending approval.
+    - **Red (`REJECTED`):** Indicates that there are rejected reports.
+    - **Black (`ALL`):** If reporting settings are off, it simply indicates that an entry was made on that day.
+  </Accordion>
+  <Accordion title="Interface Elements">
+    - **Date Navigation (Top Left):** Allows you to switch between months, weeks, or days and return to the current day.
+    - **View Options (Top Right):** Allows you to change the calendar's display range (Month/Week/Day) or switch to agenda mode.
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+  To see the detailed reports for a day or to add a new report, simply click on the relevant day on the calendar. This action will take you to the [Daily Report Details](/en/daily-reports/report-details) window.
+</Tip>
+
+## Important Notes
+
+<AccordionGroup>
+    <Accordion title="Authorization">
+        The actions of viewing, creating, editing, and deleting daily reports are subject to the user's [roles and permissions](/en/platform-rules/roles-and-permissions-rbac).
+    </Accordion>
+    <Accordion title="Visibility">
+        Users can generally only see the reports entered by their own company or the subcontractors they are responsible for. Roles with broader permissions, such as Project Manager, can view all reports in the project.
+    </Accordion>
+</AccordionGroup>

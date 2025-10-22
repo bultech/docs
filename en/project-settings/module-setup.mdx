@@ -1,0 +1,53 @@
+---
+title: "Module Initial Setup Wizard"
+description: "When you start using some modules in your project for the first time, you will encounter a setup wizard to determine how that module will work."
+---
+
+# Module Initial Setup Wizard
+
+When you start using some modules in your project for the first time, you will encounter a setup wizard to determine how that module will work. These settings allow you to customize the module's behavior according to your project's needs.
+
+## Modules Requiring Setup
+
+- **[Detailed Budget](/en/cost-management/detailed-budget)**
+- **[Anticipated Cost Report](/en/cost-management/anticipated-cost-report)**
+
+## Setup Options
+
+When you first enter these modules, you are usually asked to choose between two main operating modes:
+
+<CardGroup cols={2}>
+  <Card title="Default / Single Mode" icon="file-outline">
+    You should choose this option when you want to work with a single main table or report for the relevant module in your project.
+  </Card>
+  <Card title="Scenario-Based Mode" icon="file-multiple-outline">
+    This mode is more suitable when you want to create and compare multiple versions based on different assumptions or situations.
+  </Card>
+</CardGroup>
+
+## Changing Setup Settings
+
+You can change the choice you made initially later on.
+
+<Steps>
+  <Step title="Go to the Module Page">
+    Open the main page of the relevant module (e.g., Detailed Budget).
+  </Step>
+  <Step title="Open Settings">
+    Click the **Settings** (<img src="/icons/cog-outline.svg" alt="cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the top right corner.
+  </Step>
+  <Step title="Change the Mode">
+    Change the operating mode (e.g., "Enable Scenario-Based Reporting") from the window that opens.
+  </Step>
+</Steps>
+
+## Authorization and Data Integrity
+
+<AccordionGroup>
+  <Accordion title="Authorization">
+    Only users with [high-level roles](/en/platform-rules/roles-and-permissions-rbac) such as Project Manager or Company Owner can perform the initial setup and change the settings of modules.
+  </Accordion>
+  <Accordion title="Data Integrity">
+    Changing the operating mode **does not delete** your existing data. For example, when you switch from scenario-based mode to default mode, your scenarios are archived, and you can access this data again when you return to scenario mode later.
+  </Accordion>
+</AccordionGroup>

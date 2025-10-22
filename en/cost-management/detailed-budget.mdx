@@ -1,0 +1,79 @@
+---
+title: "Detailed Budget Management"
+description: "Detailed Budget is a comprehensive tool that allows you to track, budget, and report on all your project's cost items in detail."
+---
+
+# Detailed Budget Management
+
+Detailed Budget is a comprehensive tool that allows you to track, budget, and report on all your project's cost items in detail.
+
+## Accessing the Detailed Budget Page
+
+<Steps>
+  <Step title="Go to Cost Management">
+    While inside the relevant project, click the **Cost Management** (<img src="/icons/database-search-outline.svg" alt="database-search-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the left menu.
+  </Step>
+  <Step title="Select Budget">
+    Click the **Budget** (<img src="/icons/wallet-bifold-outline.svg" alt="wallet-bifold-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) option from the submenu that opens.
+  </Step>
+</Steps>
+
+Direct URL: `https://app.bultech.co/company/:companyId/project/:projectId/cost-management/detail-budget`
+
+## Initial Setup
+
+When you visit this page for the first time, you will be greeted with a setup screen to choose how you want to manage your budget:
+
+<CardGroup cols={2}>
+  <Card title="Default Budget" icon="file-outline">
+    Choose this option if you want to use a single main budget for the project.
+  </Card>
+  <Card title="Scenario-Based Budget" icon="file-multiple-outline">
+    Choose this option if you want to create and compare multiple budget scenarios for different situations (optimistic, pessimistic, etc.).
+  </Card>
+</CardGroup>
+
+<Info>
+After making your selection, you will be redirected to the main budget table screen. You can change this setting later from the **Settings** (<img src="/icons/cog-outline.svg" alt="cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the top right corner of the page.
+</Info>
+
+## Detailed Budget Interface
+
+<AccordionGroup>
+  <Accordion title="Global Actions (Top Right Corner)">
+    - **Edit Mode (<img src="/icons/lock-outline.svg" alt="lock-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Unlocks the table for data entry.
+    - **Filter (<img src="/icons/filter-outline.svg" alt="filter-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Filters budget items.
+    - **Table View (<img src="/icons/table-eye.svg" alt="table-eye" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Allows you to manage which columns are displayed.
+    - **Export to Excel (<img src="/icons/file-excel-box.svg" alt="file-excel-box" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Downloads the budget table.
+    - **Change History (<img src="/icons/history.svg" alt="history" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Shows a record of all changes made to the budget.
+    - **Cost Insight (<img src="/icons/local-offer.svg" alt="local-offer" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Provides AI-powered cost analysis.
+    - **Change View (<img src="/icons/view-list.svg" alt="view-list" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Changes the table view.
+    - **Fullscreen (<img src="/icons/fullscreen.svg" alt="fullscreen" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Takes the table to fullscreen.
+  </Accordion>
+  <Accordion title="Budget Table Columns">
+    - **Full Code:** Uniquely identifies the cost item.
+    - **Company Name:** Specifies the responsible subcontractor.
+    - **Original Budget:** The initially allocated budget.
+    - **Revised Budget:** The current budget after changes.
+    - **Anticipated Cost:** The sum of actual, committed, and projected additional costs.
+    - **Final Cost:** The final cost including all costs.
+    - **Variance Columns:** Show the differences between budgeted and actual costs.
+  </Accordion>
+  <Accordion title="Data Entry and Editing">
+    1.  Click the **Edit Mode** button in the top right to open the table for editing.
+    2.  You can enter data directly by clicking on the relevant cell.
+    3.  To add a new row, simply fill in the empty row at the bottom of the table.
+    4.  To delete a row, hover over the row, right-click, and select "Delete Row".
+  </Accordion>
+</AccordionGroup>
+
+## Important Notes
+
+<AccordionGroup>
+    <Accordion title="Authorization">
+        The ability to create, edit, and delete budget items depends on the user's [roles and permissions](/en/platform-rules/roles-and-permissions-rbac).
+    </Accordion>
+    <Accordion title="Automatic Calculations">
+        Many columns in the table (e.g., Revised Budget, Final Cost, Variances) are calculated automatically based on data in other columns and cannot be edited directly.
+    </Accordion>
+</AccordionGroup>

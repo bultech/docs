@@ -1,0 +1,65 @@
+---
+title: "Anticipated Cost Report"
+description: "The Anticipated Cost Report allows you to estimate and track the expected final costs for the completion of your project."
+---
+
+# Anticipated Cost Report
+
+The Anticipated Cost Report allows you to estimate and track the expected final costs for the completion of your project. This report brings together actual, committed, and potential future costs to help you foresee the financial trajectory of the project.
+
+## Accessing the Report Page
+
+<Steps>
+  <Step title="Go to Cost Management">
+    While inside the relevant project, click the **Cost Management** (<img src="/icons/database-search-outline.svg" alt="database-search-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the left menu.
+  </Step>
+  <Step title="Select Anticipated Cost">
+    Click the **Anticipated Cost** (<img src="/icons/chart-line.svg" alt="chart-line" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) option from the submenu that opens.
+  </Step>
+</Steps>
+
+Direct URL: `https://app.bultech.co/company/:companyId/project/:projectId/cost-management/anticipated-cost-report`
+
+## Initial Setup
+
+When you visit this page for the first time, you will be greeted with a setup screen to choose how you want to manage your report:
+
+<CardGroup cols={2}>
+  <Card title="Default Report" icon="file-chart-outline">
+    Choose this option if you want to use a single main report for the project.
+  </Card>
+  <Card title="Scenario-Based Reporting" icon="file-multiple-outline">
+    Choose this option if you want to create and compare multiple report scenarios for different situations (optimistic, pessimistic, etc.).
+  </Card>
+</CardGroup>
+
+<Info>
+You can change this setting later from the **Settings** (<img src="/icons/cog-outline.svg" alt="cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the top right corner of the page.
+</Info>
+
+## Report Interface and Usage
+
+<AccordionGroup>
+  <Accordion title="Global Actions">
+    - **Edit Mode (<img src="/icons/lock-outline.svg" alt="lock-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Unlocks the table for data entry.
+    - **Filter (<img src="/icons/filter-outline.svg" alt="filter-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Filters budget items.
+    - **Table View (<img src="/icons/table-eye.svg" alt="table-eye" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Manages which columns are displayed.
+    - **Export to Excel (<img src="/icons/file-excel-box.svg" alt="file-excel-box" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Downloads the report table.
+    - **Scenario Management (<img src="/icons/file-tree-outline.svg" alt="file-tree-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Opens a window to manage scenarios.
+  </Accordion>
+  <Accordion title="Report Table Columns">
+    - **Executed:** Costs that have been actually paid or invoiced to date.
+    - **Committed:** Costs that are binding, such as signed contracts, but have not yet been paid.
+    - **Projected:** Estimated additional costs that are expected to be incurred but are not yet committed.
+    - **Anticipated Cost:** The sum of the three cost types above, representing the final cost estimate for the item. (Calculated Automatically)
+  </Accordion>
+  <Accordion title="Data Entry and Editing">
+    1.  Click the **Edit Mode** button in the top right to open the table for editing.
+    2.  You can enter data directly by clicking on the relevant cell.
+    3.  To add a new row, simply fill in the empty row at the bottom of the table.
+  </Accordion>
+  <Accordion title="Important Notes">
+    - **Authorization:** The ability to edit the report, add new items, and delete them depends on the user's [roles and permissions](/en/platform-rules/roles-and-permissions-rbac).
+    - **Scenario Management:** When scenario-based reporting is active, each created scenario operates as an independent data set.
+  </Accordion>
+</AccordionGroup>

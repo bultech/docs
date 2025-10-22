@@ -1,0 +1,42 @@
+---
+title: "Work Management: Task Tracking"
+description: "The Work Management module allows you to create, assign, and track the progress of all tasks, epics (large work packages), and sub-tasks in your project."
+---
+
+# Work Management: Task Tracking
+
+The Work Management module allows you to create, assign, and track the progress of all tasks, epics (large work packages), and sub-tasks in your project.
+
+## Accessing the Page
+
+While inside the relevant project, simply click the **Work Management** (<img src="/icons/calendar-task-outline.svg" alt="calendar-task-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the left menu.
+
+Direct URL: `https://app.bultech.co/company/:companyId/project/:projectId/work-management/list`
+
+## Interface Views
+
+At the top of the page, there are three main view buttons that allow you to visualize your tasks in different ways:
+
+<CardGroup cols={3}>
+  <Card title="List View" icon="format-list-bulleted" href="/en/work-management/views-and-basic-operations">
+    Displays all tasks and epics in a hierarchical table structure.
+  </Card>
+  <Card title="Kanban Board" icon="view-kanban-outline" href="/en/work-management/kanban-board">
+    Visualizes tasks in columns according to their status. Allows for status updates via drag-and-drop.
+  </Card>
+  <Card title="Timeline" icon="chart-gantt" href="/en/work-management/timeline">
+    Visualizes tasks on a Gantt chart based on their start and end dates.
+  </Card>
+</CardGroup>
+
+## Global Actions (Top Right Corner of the Page)
+
+- **Create Task:** Opens the form to create a new task or epic.
+- **Filter (<img src="/icons/filter-outline.svg" alt="filter-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Filters tasks by criteria such as assignee, due date, and priority.
+- **Search:** Performs a text-based search within tasks.
+
+<Note>
+  **Authorization and Visibility:**
+  - Actions such as creating, editing, and deleting new tasks depend on the user's [roles and permissions](/en/platform-rules/roles-and-permissions-rbac).
+  - By default, users can only see tasks assigned to them or tasks for which they are on the notification list.
+</Note>

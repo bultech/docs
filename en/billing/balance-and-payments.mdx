@@ -1,0 +1,50 @@
+---
+title: "Balance and Payments"
+description: "This section allows you to manage your company's financial transactions on the platform, its current balance, and payment history."
+---
+
+# Balance and Payments
+
+This section allows you to manage your company's financial transactions on the platform, its current balance, and payment history.
+
+## Accessing the Balance and Payments Page
+
+- **Direct URL:** `https://app.bultech.co/company/:companyId/detail/balance`
+- **Interface Path:**
+  1.  Click the **Company** (<img src="/icons/view-dashboard-outline.svg" alt="view-dashboard-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the left menu.
+  2.  Click the **Balance** (<img src="/icons/wallet-outline.svg" alt="wallet-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) tab in the top menu.
+
+## Interface Components
+
+This page consists of two main tabs:
+
+### 1. Add Balance (Checkout)
+
+This tab allows you to add balance to your company account.
+
+- **Balance Amount:** A field where you can enter the amount you want to load.
+- **Payment Method:** A secure form field where you will enter your credit card information.
+- **Make Payment Button:** Used to complete the payment after filling in the necessary information.
+
+### 2. Transactions
+
+This tab provides a list of all financial transactions related to your company.
+
+- **Transaction Table:**
+    *   **Date:** Shows the date the transaction was made.
+    *   **Description:** Specifies what the transaction is about (e.g., "Balance Top-up," "Monthly Subscription Fee").
+    *   **Amount:** Shows the financial value of the transaction.
+    *   **Status:** Indicates the status of the transaction (e.g., "Successful," "Failed," "Pending").
+    *   **Invoice:** Contains a link or button that allows you to download your invoice for successful transactions.
+
+## Payment Process
+
+1.  Go to the **Add Balance** tab.
+2.  Enter the amount you want to load.
+3.  Enter your credit card information (Card Number, Expiration Date, CVC) in the respective fields.
+4.  Click the "**Make Payment**" button.
+5.  When the transaction is successful, the amount you loaded is reflected in your company balance, and a new record is created in the **Transactions** tab.
+
+## Important Notes
+
+- **Authorization:** Since this page contains the company's financial information, it can only be viewed and managed by users with [high-level roles](/en/platform-rules/roles-and-permissions-rbac) such as **Company Owner** or **Company Admin**. Other users cannot see this tab.

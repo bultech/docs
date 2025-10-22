@@ -1,0 +1,58 @@
+---
+title: "Harcamalar (Spending)"
+description: "Bu modül, projenizdeki tüm harcamaları maliyet kodlarına ve alt yüklenicilere göre aylık olarak takip etmenizi sağlar."
+---
+
+# Harcamalar (Spending)
+
+Bu modül, projenizdeki tüm harcamaları maliyet kodlarına ve alt yüklenicilere göre aylık olarak takip etmenizi sağlar. Bütçenizin ne kadarının harcandığını ve kalan bakiyenizi anlık olarak görebilirsiniz.
+
+## Sayfaya Erişim
+
+<Steps>
+  <Step title="Maliyet Yönetimine Gidin">
+    İlgili projenin içindeyken, sol menüden **Maliyet Yönetimi** (<img src="/icons/database-search-outline.svg" alt="database-search-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayın.
+  </Step>
+  <Step title="Harcamalar'ı Seçin">
+    Açılan alt menüden **Harcamalar** (<img src="/icons/form-select.svg" alt="form-select" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) seçeneğine tıklayın.
+  </Step>
+</Steps>
+
+Doğrudan URL: `https://app.bultech.co/company/:companyId/project/:projectId/cost-management/spending`
+
+## Harcama Girişi
+
+<Steps>
+  <Step title="Düzenleme Modunu Açın">
+    Sağ üstteki **Düzenleme Modu** (<img src="/icons/lock-outline.svg" alt="lock-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) butonuna tıklayın.
+  </Step>
+  <Step title="Yeni Satır Ekleyin">
+    Yeni bir harcama kalemi eklemek için tablonun en altındaki boş satırda **Tam Kod** ve **Şirket** seçimi yapın.
+  </Step>
+  <Step title="Harcama Tutarını Girin">
+    İlgili ayın sütununa gelerek o aya ait harcama tutarını girin. Hücreye tıkladığınızda bir maliyet hesaplayıcı açılır.
+  </Step>
+</Steps>
+
+## Arayüz ve Ayarlar
+
+<AccordionGroup>
+  <Accordion title="Global Aksiyonlar">
+    - **Filtrele (<img src="/icons/filter-outline.svg" alt="filter-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Belirli bir alt yükleniciye göre filtreleme yapar.
+    - **Tablo Görünümü (<img src="/icons/table-eye.svg" alt="table-eye" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Gösterilecek sütunları özelleştirir.
+    - **Excel'e Aktar (<img src="/icons/file-excel-box.svg" alt="file-excel-box" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Tabloyu Excel formatında indirir.
+    - **Çeyrek/Yıl Seçimi (<img src="/icons/briefcase-clock-outline.svg" alt="briefcase-clock-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Gösterilecek yıl ve çeyreği seçer.
+    - **Ayarlar (<img src="/icons/cog-outline.svg" alt="cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Harcamalar tablosunun davranışını yapılandırır.
+  </Accordion>
+  <Accordion title="Harcama Tablosu Sütunları">
+    - **Revize Edilmiş Bütçe:** İlgili maliyet kalemi için ayrılan toplam bütçeyi gösterir.
+    - **Aylık Harcama Sütunları:** Aylık olarak yapılan harcamaların girildiği alanlardır.
+    - **Bugüne Kadarki İş Maliyeti:** O güne kadar yapılmış toplam harcamayı gösterir.
+    - **Kalan Bakiye:** Bütçeden harcama çıkarıldıktan sonra kalan tutarı gösterir.
+    - **% Harcanan:** Bütçenin yüzde kaçının harcandığını gösterir.
+  </Accordion>
+  <Accordion title="Önemli Notlar">
+    - **Yetkilendirme:** Harcama tablosunu düzenleme yetkisi, kullanıcının [rollerine ve yetkilerine](/tr/platform-kurallari/roller-ve-yetkiler-rbac) bağlıdır.
+    - **Bütçe Senkronizasyonu:** Ayarlar (<img src="/icons/cog-outline.svg" alt="cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) menüsünden, "Revize Edilmiş Bütçe" sütununun **Detaylı Bütçe** tablosundaki verilerle senkronize edilmesini sağlayabilirsiniz.
+  </Accordion>
+</AccordionGroup>

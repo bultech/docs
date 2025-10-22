@@ -1,0 +1,58 @@
+---
+title: "Spending"
+description: "This module allows you to track all expenditures in your project on a monthly basis by cost code and subcontractor."
+---
+
+# Spending
+
+This module allows you to track all expenditures in your project on a monthly basis by cost code and subcontractor. You can see how much of your budget has been spent and your remaining balance in real-time.
+
+## Accessing the Page
+
+<Steps>
+  <Step title="Go to Cost Management">
+    While inside the relevant project, click the **Cost Management** (<img src="/icons/database-search-outline.svg" alt="database-search-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the left menu.
+  </Step>
+  <Step title="Select Spending">
+    Click the **Spending** (<img src="/icons/form-select.svg" alt="form-select" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) option from the submenu that opens.
+  </Step>
+</Steps>
+
+Direct URL: `https://app.bultech.co/company/:companyId/project/:projectId/cost-management/spending`
+
+## Entering Expenditures
+
+<Steps>
+  <Step title="Open Edit Mode">
+    Click the **Edit Mode** (<img src="/icons/lock-outline.svg" alt="lock-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) button in the top right.
+  </Step>
+  <Step title="Add a New Row">
+    To add a new spending item, select a **Full Code** and **Company** in the empty row at the bottom of the table.
+  </Step>
+  <Step title="Enter the Spending Amount">
+    Go to the column for the relevant month and enter the spending amount for that month. A cost calculator will open when you click the cell.
+  </Step>
+</Steps>
+
+## Interface and Settings
+
+<AccordionGroup>
+  <Accordion title="Global Actions">
+    - **Filter (<img src="/icons/filter-outline.svg" alt="filter-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Filters by a specific subcontractor.
+    - **Table View (<img src="/icons/table-eye.svg" alt="table-eye" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Customizes the columns to be displayed.
+    - **Export to Excel (<img src="/icons/file-excel-box.svg" alt="file-excel-box" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Downloads the table in Excel format.
+    - **Quarter/Year Selection (<img src="/icons/briefcase-clock-outline.svg" alt="briefcase-clock-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Selects the year and quarter to be displayed.
+    - **Settings (<img src="/icons/cog-outline.svg" alt="cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Configures the behavior of the spending table.
+  </Accordion>
+  <Accordion title="Spending Table Columns">
+    - **Revised Budget:** Shows the total budget allocated for the relevant cost item.
+    - **Monthly Spending Columns:** Fields where monthly expenditures are entered.
+    - **Job to Date Cost:** Shows the total expenditure made to date.
+    - **Remaining Balance:** Shows the amount remaining after deducting expenditures from the budget.
+    - **% Spent:** Shows what percentage of the budget has been spent.
+  </Accordion>
+  <Accordion title="Important Notes">
+    - **Authorization:** The permission to edit the spending table depends on the user's [roles and permissions](/en/platform-rules/roles-and-permissions-rbac).
+    - **Budget Synchronization:** From the Settings (<img src="/icons/cog-outline.svg" alt="cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) menu, you can ensure that the "Revised Budget" column is synchronized with the data in the **Detailed Budget** table.
+  </Accordion>
+</AccordionGroup>

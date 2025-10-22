@@ -1,0 +1,53 @@
+---
+title: "Modül İlk Kurulum Sihirbazı"
+description: "Bazı modülleri projenizde ilk kez kullanmaya başladığınızda, o modülün nasıl çalışacağını belirlemeniz için bir kurulum sihirbazı ile karşılaşırsınız."
+---
+
+# Modül İlk Kurulum Sihirbazı
+
+Bazı modülleri projenizde ilk kez kullanmaya başladığınızda, o modülün nasıl çalışacağını belirlemeniz için bir kurulum sihirbazı ile karşılaşırsınız. Bu ayarlar, projenizin ihtiyaçlarına göre modülün davranışını özelleştirmenize olanak tanır.
+
+## Kurulum Gerektiren Modüller
+
+- **[Detaylı Bütçe](/tr/maliyet-yonetimi/detayli-butce)**
+- **[Öngörülen Maliyet Raporu](/tr/maliyet-yonetimi/ongorulen-maliyet-raporu)**
+
+## Kurulum Seçenekleri
+
+Bu modüllere ilk kez girdiğinizde, genellikle iki ana çalışma modu arasında seçim yapmanız istenir:
+
+<CardGroup cols={2}>
+  <Card title="Varsayılan / Tekil Mod" icon="file-outline">
+    Projeniz için ilgili modülde tek bir ana tablo veya rapor üzerinden çalışmak istediğinizde bu seçeneği tercih etmelisiniz.
+  </Card>
+  <Card title="Senaryo Bazlı Mod" icon="file-multiple-outline">
+    Farklı varsayımlara veya durumlara göre birden fazla versiyon oluşturup bunları karşılaştırmak istediğinizde bu mod daha uygundur.
+  </Card>
+</CardGroup>
+
+## Kurulum Ayarlarını Değiştirme
+
+Başlangıçta yaptığınız bu seçimi daha sonra değiştirebilirsiniz.
+
+<Steps>
+  <Step title="Modül Sayfasına Gidin">
+    İlgili modülün (örn: Detaylı Bütçe) ana sayfasını açın.
+  </Step>
+  <Step title="Ayarları Açın">
+    Sağ üst köşede bulunan **Ayarlar** (<img src="/icons/cog-outline.svg" alt="cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayın.
+  </Step>
+  <Step title="Modu Değiştirin">
+    Açılan pencereden çalışma modunu (örn: "Senaryo Bazlı Raporlamayı Etkinleştir") değiştirin.
+  </Step>
+</Steps>
+
+## Yetkilendirme ve Veri Bütünlüğü
+
+<AccordionGroup>
+  <Accordion title="Yetkilendirme">
+    Modüllerin ilk kurulumunu ve ayar değişikliğini yalnızca Proje Yöneticisi veya Şirket Sahibi gibi [yüksek yetkili roller](/tr/platform-kurallari/roller-ve-yetkiler-rbac) yapabilir.
+  </Accordion>
+  <Accordion title="Veri Bütünlüğü">
+    Çalışma modunu değiştirmek, mevcut verilerinizi **silmez**. Örneğin, senaryo bazlı moddan varsayılan moda geçtiğinizde, senaryolarınız arşivlenir ve daha sonra tekrar senaryo moduna döndüğünüzde bu verilere yeniden erişebilirsiniz.
+  </Accordion>
+</AccordionGroup>

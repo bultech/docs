@@ -1,0 +1,69 @@
+---
+title: "Change Orders (Change Events)"
+description: "Change Orders are used to officially document and manage changes that occur in the project budget or scope."
+---
+
+# Change Orders (Change Events)
+
+Change Orders are used to officially document and manage changes that occur in the project budget or scope. This module allows you to track all change requests, approval processes, and their financial impacts from a single location.
+
+## Accessing the Page
+
+<Steps>
+  <Step title="Go to Cost Management">
+    While inside the relevant project, click the **Cost Management** (<img src="/icons/database-search-outline.svg" alt="database-search-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the left menu.
+  </Step>
+  <Step title="Select Change History">
+    Click the **Change History** (<img src="/icons/form-select.svg" alt="form-select" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) option from the submenu that opens.
+  </Step>
+</Steps>
+
+Direct URL: `https://app.bultech.co/company/:companyId/project/:projectId/cost-management/change-events`
+
+## Creating a New Change Order
+
+<Steps>
+  <Step title="Open the Form">
+    Click the blue "**Add Change Event**" button in the top right corner.
+  </Step>
+  <Step title="Fill in the Information">
+    Fill in fields such as general information, details, cost information, status, description, and files in the form that opens.
+  </Step>
+  <Step title="Save">
+    Complete the process by clicking the "**Add Change Event**" button.
+  </Step>
+</Steps>
+
+## Interface and Management
+
+<AccordionGroup>
+  <Accordion title="Interface Components">
+    - **Analytics Cards:** At the top of the page, there are colored information cards that summarize the total costs and counts of change orders by their status.
+    - **Change Order List:** Below, there is a table listing all created change orders.
+  </Accordion>
+  <Accordion title="Global Actions">
+    - **Filter (<img src="/icons/filter-outline.svg" alt="filter-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Filters change orders by criteria such as status, type, and scope.
+    - **Search:** Performs a text-based search within the list.
+    - **Export to Excel (<img src="/icons/file-excel-box.svg" alt="file-excel-box" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Downloads the current list in Excel format.
+    - **Recycle Bin (<img src="/icons/delete-outline.svg" alt="delete-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Displays deleted change orders.
+  </Accordion>
+  <Accordion title="Managing an Existing Order">
+    - **View and Edit:** You can view and edit the details of a change order by clicking on it in the list.
+    - **Delete:** You can delete an order by hovering over a row, right-clicking, and selecting "Delete Row" from the menu that opens.
+    - **Export as PDF:** You can get a PDF output of the order by selecting "Export as PDF" from the right-click menu.
+  </Accordion>
+</AccordionGroup>
+
+## Important Notes
+
+<AccordionGroup>
+  <Accordion title="Authorization">
+    All actions such as creating, editing, deleting, and changing the status of a change order depend on the user's [roles and permissions](/en/platform-rules/roles-and-permissions-rbac).
+  </Accordion>
+  <Accordion title="Impact on Budget">
+    The cost of a change order that is set to "Approved" is automatically reflected in the "Revised Budget" column of the relevant cost item in the **Detailed Budget** table.
+  </Accordion>
+  <Accordion title="Status Flow">
+    A change order is typically created as a "Draft," then sent to the relevant people for approval, and finally results in "Approved" or "Rejected."
+  </Accordion>
+</AccordionGroup>

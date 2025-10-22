@@ -1,0 +1,51 @@
+---
+title: "Sözleşme Oluşturma ve Düzenleme"
+description: "Bu form, yeni bir sözleşme kaydı oluşturmanıza veya mevcut bir sözleşmenin detaylarını güncellemenize olanak tanır."
+---
+
+# Sözleşme Oluşturma ve Düzenleme
+
+Bu form, yeni bir sözleşme kaydı oluşturmanıza veya mevcut bir sözleşmenin detaylarını güncellemenize olanak tanır.
+
+## Forma Erişim
+
+- **Oluşturma:** [Sözleşme Günlüğü](/tr/taahhutler/sozlesme-gunlugu) sayfasının sağ üst köşesindeki mavi renkli "**Sözleşme Günlüğü Oluştur**" butonuna tıklayın.
+- **Düzenleme:** [Sözleşme Günlüğü](/tr/taahhutler/sozlesme-gunlugu) listesindeki bir sözleşmenin **Sözleşme Numarası**'na veya **Düzenle** (<img src="/icons/note-edit-outline.svg" alt="note-edit-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayın.
+
+## Form Bölümleri
+
+Form, daraltılıp genişletilebilen birkaç bölümden oluşur:
+
+<AccordionGroup>
+  <Accordion title="Genel Bilgiler">
+    - **Sözleşme #:** Sözleşmenin benzersiz numarası.
+    - **Sözleşmeli Şirket:** Sözleşmenin yapıldığı alt yüklenici.
+    - **Başlık:** Sözleşmenin kısa bir başlığı.
+    - **Durum:** Sözleşmenin durumu (İmzalı, İmzasız, Beklemede).
+    - **Teminat Kesintisi (%):** Sözleşme bedelinden yapılacak kesinti oranı.
+    - **Gerçekleştirildi:** Sözleşmenin yürürlüğe girdiğini belirten onay kutusu.
+    - **Açıklama:** Sözleşme kapsamı hakkında detaylı bilgi.
+    - **Dosyalar:** İlgili dosyaları yükleme alanı.
+  </Accordion>
+  <Accordion title="Sözleşme Özeti">
+    - **Bütçe:** Bu iş için Detaylı Bütçe'de ayrılan tutarı gösterir.
+    - **Orijinal Sözleşme Tutarı:** Sözleşmenin ana bedeli.
+    - **Değişiklik Emri Tutarı:** İlişkili onaylanmış değişiklik emirlerinin toplam tutarı.
+    - **Son Sözleşme Tutarı:** Sistem tarafından otomatik olarak hesaplanan nihai tutar.
+  </Accordion>
+  <Accordion title="Değerler Listesi (Schedule of Values)">
+    Sözleşme bedelinin maliyet kodlarına göre dökümünü yapabileceğiniz bir alt tablodur.
+  </Accordion>
+  <Accordion title="Dahil Edilenler & Hariç Tutulanlar">
+    - **Dahil Edilenler:** Sözleşme kapsamına nelerin dahil olduğunu listeleyebileceğiniz bir metin alanıdır.
+    - **Hariç Tutulanlar:** Sözleşme kapsamı dışında kalan maddeleri belirtebileceğiniz bir metin alanıdır.
+  </Accordion>
+  <Accordion title="Sözleşme Tarihleri">
+    Projenin takvimiyle ilgili önemli tarihleri (Başlangıç, Bitiş, Sözleşme Tarihi vb.) girebileceğiniz alanlardır.
+  </Accordion>
+</AccordionGroup>
+
+<Card title="Yapay Zeka Puanı (Score AI)" icon="robot-outline">
+  - **Konum:** Formun sağ tarafında ayrı bir panel olarak yer alır.
+  - **İşlev:** Sözleşmeye bir dosya eklediğinizde aktif hale gelir. "**AI ÇALIŞTIR**" butonuna tıkladığınızda, yapay zeka yüklediğiniz sözleşme dosyasını analiz eder ve riskleri, eksiklikleri veya potansiyel sorunları belirleyerek 10 üzerinden bir puan verir. Bu özellik, sözleşmelerinizi imzalamadan önce potansiyel riskleri öngörmenize yardımcı olur.
+</Card>

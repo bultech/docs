@@ -1,0 +1,69 @@
+---
+title: "Değişiklik Emirleri (Change Events)"
+description: "Değişiklik Emirleri, proje bütçesinde veya kapsamında meydana gelen değişiklikleri resmi olarak belgelemek ve yönetmek için kullanılır."
+---
+
+# Değişiklik Emirleri (Change Events)
+
+Değişiklik Emirleri, proje bütçesinde veya kapsamında meydana gelen değişiklikleri resmi olarak belgelemek ve yönetmek için kullanılır. Bu modül, tüm değişiklik taleplerini, onay süreçlerini ve mali etkilerini tek bir yerden izlemenizi sağlar.
+
+## Sayfaya Erişim
+
+<Steps>
+  <Step title="Maliyet Yönetimine Gidin">
+    İlgili projenin içindeyken, sol menüden **Maliyet Yönetimi** (<img src="/icons/database-search-outline.svg" alt="database-search-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayın.
+  </Step>
+  <Step title="Değişiklik Geçmişi'ni Seçin">
+    Açılan alt menüden **Değişiklik Geçmişi** (<img src="/icons/form-select.svg" alt="form-select" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) seçeneğine tıklayın.
+  </Step>
+</Steps>
+
+Doğrudan URL: `https://app.bultech.co/company/:companyId/project/:projectId/cost-management/change-events`
+
+## Yeni Değişiklik Emri Oluşturma
+
+<Steps>
+  <Step title="Formu Açın">
+    Sağ üstteki mavi renkli "**Değişiklik Geçmişi Ekle**" butonuna tıklayın.
+  </Step>
+  <Step title="Bilgileri Doldurun">
+    Açılan formda genel bilgiler, detaylar, maliyet bilgileri, durum, açıklama ve dosyalar gibi alanları doldurun.
+  </Step>
+  <Step title="Kaydedin">
+    "**Değişiklik Geçmişi Ekle**" butonuna tıklayarak işlemi tamamlayın.
+  </Step>
+</Steps>
+
+## Arayüz ve Yönetim
+
+<AccordionGroup>
+  <Accordion title="Arayüz Bileşenleri">
+    - **Analitik Kartlar:** Sayfanın üst kısmında, değişiklik emirlerinin durumlarına göre toplam maliyetlerini ve sayılarını özetleyen renkli bilgi kartları bulunur.
+    - **Değişiklik Emirleri Listesi:** Alt kısımda, oluşturulan tüm değişiklik emirlerinin listelendiği bir tablo yer alır.
+  </Accordion>
+  <Accordion title="Global Aksiyonlar">
+    - **Filtrele (<img src="/icons/filter-outline.svg" alt="filter-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Değişiklik emirlerini durum, tip, kapsam gibi kriterlere göre filtreler.
+    - **Ara:** Liste içinde metin bazlı arama yapar.
+    - **Excel'e Aktar (<img src="/icons/file-excel-box.svg" alt="file-excel-box" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Mevcut listeyi Excel formatında indirir.
+    - **Geri Dönüşüm Kutusu (<img src="/icons/delete-outline.svg" alt="delete-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />):** Silinmiş değişiklik emirlerini görüntüler.
+  </Accordion>
+  <Accordion title="Mevcut Bir Emri Yönetme">
+    - **Görüntüleme ve Düzenleme:** Listeden bir değişiklik emrinin üzerine tıklayarak detaylarını görüntüleyebilir ve düzenleyebilirsiniz.
+    - **Silme:** Fare ile bir satırın üzerine gelip sağ tıklayarak açılan menüden "Satırı Sil" seçeneği ile silebilirsiniz.
+    - **PDF Olarak Dışa Aktarma:** Sağ tıklama menüsünden "PDF Olarak Dışa Aktar" seçeneği ile emrin PDF çıktısını alabilirsiniz.
+  </Accordion>
+</AccordionGroup>
+
+## Önemli Notlar
+
+<AccordionGroup>
+  <Accordion title="Yetkilendirme">
+    Değişiklik emri oluşturma, düzenleme, silme ve durumunu değiştirme gibi tüm işlemler, kullanıcının [rollerine ve yetkilerine](/tr/platform-kurallari/roller-ve-yetkiler-rbac) bağlıdır.
+  </Accordion>
+  <Accordion title="Bütçeye Etkisi">
+    "Onaylandı" durumuna getirilen bir değişiklik emrinin maliyeti, ilgili maliyet kaleminin **Detaylı Bütçe** tablosundaki "Revize Edilmiş Bütçe" sütununa otomatik olarak yansıtılır.
+  </Accordion>
+  <Accordion title="Durum Akışı">
+    Bir değişiklik emri genellikle "Taslak" olarak oluşturulur, ardından onay için ilgili kişilere gönderilir ve "Onaylandı" veya "Reddedildi" olarak sonuçlanır.
+  </Accordion>
+</AccordionGroup>

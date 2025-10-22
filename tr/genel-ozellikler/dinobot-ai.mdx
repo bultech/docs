@@ -1,0 +1,45 @@
+---
+title: "DinoBot AI Asistanı"
+description: "DinoBot, projenizin verileriyle ilgili sorular sorabileceğiniz, analizler yapabileceğiniz ve hatta belirli eylemleri gerçekleştirebileceğiniz yapay zeka destekli kişisel asistanınızdır."
+---
+
+# DinoBot AI Asistanı
+
+DinoBot, projenizin verileriyle ilgili sorular sorabileceğiniz, analizler yapabileceğiniz ve hatta belirli eylemleri gerçekleştirebileceğiniz yapay zeka destekli kişisel asistanınızdır. DinoBot'a iki farklı arayüzden erişebilirsiniz.
+
+<CardGroup cols={2}>
+  <Card title="Hızlı Erişim Paneli" icon="lightning-bolt">
+    Herhangi bir sayfadayken hızlıca soru sormak için tasarlanmıştır.
+    - **Klavye Kısayolu:** `CTRL + J` (Windows) veya `⌘ + J` (macOS)
+    - **Arayüz Yolu:** Sağ menünün en altındaki **Bul ikonu** (<img src="/images/chatBot.svg" alt="chatbot" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) üzerine tıklayın.
+  </Card>
+  <Card title="Tam Sayfa Sohbet Arayüzü" icon="chat-outline" href="/tr/yapay-zeka/ai-sohbet-sayfasi">
+    Daha karmaşık analizler ve odaklanmış bir çalışma alanı için özel bir sohbet sayfasıdır.
+    - **Arayüz Yolu:** İlgili projenin içindeyken, sol menüden **AI Sohbeti** (<img src="/icons/chat-outline.svg" alt="chat-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayın.
+  </Card>
+</CardGroup>
+
+## Genel Sohbet Özellikleri
+
+<AccordionGroup>
+  <Accordion title="Soru Sorma ve Cevap Alma">
+    Alt kısımdaki metin kutusuna projenizle ilgili herhangi bir soruyu yazın ve `Enter` tuşuna basın. DinoBot, sorunuzu analiz eder ve projenizdeki ilgili verilere dayanarak size bir cevap oluşturur.
+  </Accordion>
+  <Accordion title="Dosya Yükleme">
+    Metin kutusunun solundaki **ataç** (<img src="/icons/paperclip.svg" alt="paperclip" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonuna tıklayarak, sorunuzla ilgili PDF gibi belgeler yükleyebilirsiniz. DinoBot, sorunuzu yanıtlarken bu belgenin içeriğini de dikkate alacaktır.
+  </Accordion>
+  <Accordion title="Kaynaklar">
+    DinoBot, cevabını oluştururken kullandığı veri kaynaklarını veya ilgili belgeleri genellikle cevabının altında belirtir.
+  </Accordion>
+</AccordionGroup>
+
+## Örnek Sorular
+
+- "En yüksek maliyetli 5 maliyet kodunu listele."
+- "Onaylanmamış değişiklik emirlerinin toplam tutarı ne kadar?"
+- "X alt yüklenicisi ile olan sözleşmenin özetini çıkar."
+- "Yüklediğim belgedeki riskli maddeler nelerdir?"
+
+<Note>
+  **Yetkilendirme ve Veri Erişimi:** DinoBot'un erişebildiği veriler, sizin kullanıcı [rolünüz ve yetkilerinizle](/tr/platform-kurallari/roller-ve-yetkiler-rbac) sınırlıdır. Görmeye yetkiniz olmayan verilere DinoBot da erişemez.
+</Note>

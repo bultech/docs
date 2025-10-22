@@ -1,0 +1,51 @@
+---
+title: "Contract Creation and Editing"
+description: "This form allows you to create a new contract record or update the details of an existing contract."
+---
+
+# Contract Creation and Editing
+
+This form allows you to create a new contract record or update the details of an existing contract.
+
+## Accessing the Form
+
+- **Creation:** Click the blue "**Create Contract Log**" button in the top right corner of the [Contract Log](/en/commitments/contract-log) page.
+- **Editing:** Click on the **Contract Number** or the **Edit** (<img src="/icons/note-edit-outline.svg" alt="note-edit-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon of a contract in the [Contract Log](/en/commitments/contract-log) list.
+
+## Form Sections
+
+The form consists of several collapsible sections:
+
+<AccordionGroup>
+  <Accordion title="General Information">
+    - **Contract #:** The unique number of the contract.
+    - **Contracted Company:** The subcontractor with whom the contract is made.
+    - **Title:** A short title for the contract.
+    - **Status:** The status of the contract (Signed, Unsigned, Pending).
+    - **Retainage (%):** The percentage to be withheld from the contract amount.
+    - **Executed:** A checkbox indicating that the contract has been put into effect.
+    - **Description:** Detailed information about the scope of the contract.
+    - **Files:** An area to upload related files.
+  </Accordion>
+  <Accordion title="Contract Summary">
+    - **Budget:** Shows the amount allocated in the Detailed Budget for this work.
+    - **Original Contract Amount:** The main value of the contract.
+    - **Change Order Amount:** The total amount of associated approved change orders.
+    - **Final Contract Amount:** The final amount automatically calculated by the system.
+  </Accordion>
+  <Accordion title="Schedule of Values">
+    A sub-table where you can break down the contract amount by cost codes.
+  </Accordion>
+  <Accordion title="Inclusions & Exclusions">
+    - **Inclusions:** A text area where you can list what is included in the scope of the contract.
+    - **Exclusions:** A text area where you can specify items that are outside the scope of the contract.
+  </Accordion>
+  <Accordion title="Contract Dates">
+    Fields where you can enter important dates related to the project's schedule (Start, End, Contract Date, etc.).
+  </Accordion>
+</AccordionGroup>
+
+<Card title="AI Score" icon="robot-outline">
+  - **Location:** Located as a separate panel on the right side of the form.
+  - **Function:** Becomes active when you attach a file to the contract. When you click the "**RUN AI**" button, the artificial intelligence analyzes the uploaded contract file and gives a score out of 10 by identifying risks, deficiencies, or potential problems. This feature helps you anticipate potential risks before signing your contracts.
+</Card>

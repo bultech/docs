@@ -1,0 +1,33 @@
+---
+title: "Yorumlar ve İletişim"
+description: "Platformun birçok bölümünde, belirli bir öğe (görev, rapor vb.) hakkında ekip üyeleriyle iletişim kurmak için yorum özelliğini kullanabilirsiniz."
+---
+
+# Yorumlar ve İletişim
+
+Platformun birçok bölümünde, belirli bir öğe (görev, rapor vb.) hakkında ekip üyeleriyle iletişim kurmak için yorum özelliğini kullanabilirsiniz. Yorum alanı genellikle bir öğenin detay panelinin veya sayfasının alt kısmında bulunur.
+
+<AccordionGroup>
+  <Accordion title="Yorum Yapma">
+    1.  **Metin Editörü:** Yorumunuzu yazmak için zengin metin editörünü kullanın. Metninizi biçimlendirebilir (kalın, italik), listeler oluşturabilir ve bağlantılar ekleyebilirsiniz.
+    2.  **Yorum Ekle Butonu:** Yorumunuzu yazdıktan sonra "**Yorum Ekle**" (veya benzeri) butonuna tıklayarak gönderin.
+    3.  **Bildirim:** Yorumunuz gönderildiğinde, ilgili öğeyi takip eden veya yorumda bahsedilen (`@mention`) kişilere bildirim gider.
+  </Accordion>
+  <Accordion title="Yorumları Görüntüleme ve Yönetme">
+    - **Yorum Listesi:** Bir öğeye eklenen tüm yorumlar, en yeniden en eskiye doğru sıralanır.
+    - **Kullanıcı Bilgisi:** Her yorumun yanında, yorumu yapan kişinin profil resmi, adı ve yorumun ne kadar zaman önce yapıldığı bilgisi yer alır.
+    - **Düzenleme ve Silme:** Kendi yaptığınız bir yorumun üzerine fare ile geldiğinizde, genellikle **Düzenle** (<img src="/icons/comment-edit-outline.svg" alt="comment-edit-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ve **Sil** (<img src="/icons/trash-can-outline.svg" alt="trash-can-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) ikonları belirir.
+  </Accordion>
+  <Accordion title="Kullanıcıları Etiketleme (@mention)">
+    Yorum yaparken, belirli bir kişiyi doğrudan bilgilendirmek için `@` sembolünü kullanabilirsiniz.
+
+    1.  Yorum alanına `@` yazın.
+    2.  Proje veya şirket ekibinizdeki kullanıcıların bir listesi belirecektir.
+    3.  Etiketlemek istediğiniz kullanıcıyı listeden seçin veya adını yazmaya devam edin.
+    4.  Yorum gönderildiğinde, etiketlediğiniz kullanıcı özel bir bildirim alacaktır.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  **Yetki Notu:** Yorumları görüntüleme, oluşturma, düzenleme ve silme yetkileri, kullanıcının [rollerine ve yetkilerine](/tr/platform-kurallari/roller-ve-yetkiler-rbac) bağlıdır. Örneğin, "Yorumları Silme" yetkisine sahip bir yönetici, başkalarının yorumlarını da silebilir.
+</Note>

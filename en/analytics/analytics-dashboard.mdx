@@ -1,0 +1,42 @@
+---
+title: "Project Analytics Dashboard"
+description: "The analytics dashboard is a visual control panel designed for you to see your project's financial health and overall progress at a glance."
+---
+
+# Project Analytics Dashboard
+
+The analytics dashboard is a visual control panel designed for you to see your project's financial health and overall progress at a glance.
+
+## Accessing the Analytics Dashboard
+
+- **Direct URL:** `https://app.bultech.co/company/:companyId/project/:projectId/analytics`
+- **Interface Path:** This page opens by default when you log into the relevant project, or you can access it by clicking the **Analytics** (<img src="/icons/chart-box-outline.svg" alt="chart-box-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) icon in the left menu.
+
+## Dashboard Components
+
+The analytics dashboard consists of various information cards and charts:
+
+<AccordionGroup>
+  <Accordion title="General Information Cards (Top Row)">
+    Summarizes your project's most basic financial metrics: **Project Budget**, **Revenue**, **Approved Changes**, **Profit**, and **Debt**.
+  </Accordion>
+  <Accordion title="Completion Counter and Project Overview">
+    - **Completion Counter:** Shows how much time is left until the project's planned completion date.
+    - **Project Overview:** Displays the project's name, number, address, and location on a map.
+  </Accordion>
+  <Accordion title="Spending Chart">
+    A bar chart showing total monthly expenditures. You can select the year and quarter from the Settings (<img src="/icons/cog-outline.svg" alt="cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) menu.
+  </Accordion>
+  <Accordion title="Commitments Status">
+    A donut chart showing the status of your contracts (Signed, Unsigned, Pending) and the total costs in these statuses.
+  </Accordion>
+  <Accordion title="Budget vs Final Cost Comparison">
+    A bar chart that compares the original budget and the actual final cost side-by-side for specific cost codes. You can select which cost codes to display from the Settings (<img src="/icons/cog-outline.svg" alt="cog-outline" className="inline align-middle dark:invert" style={{width: '16px', height: '16px', margin: 0}} />) menu.
+  </Accordion>
+  <Accordion title="Change Order Status">
+    A donut chart showing the distribution and total costs of your change orders by their status.
+  </Accordion>
+  <Accordion title="Financial Health">
+    An area chart that presents a score and trend of your project's overall financial performance and health.
+  </Accordion>
+</AccordionGroup>
